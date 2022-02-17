@@ -1,0 +1,33 @@
+name: Build repo and deploy to pages
+
+on:
+ - workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install node and deps
+      uses: actions/setup-node@v2
+      with:
+        node-version: "16"
+        cache: "pnpm"
+    - run: pnpm i
+    
+    - name: Build repo
+      run: pnpm repo:build
+      
+    - name: Copy extra files
+      run: cp README.md dist/README.md
+      
+    - name: Deploy to GH pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          # Makes it so the md files in the previous step get processed by GitHub Pages
+          enable_jekyll: true
