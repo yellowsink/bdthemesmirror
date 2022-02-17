@@ -1,0 +1,146 @@
+/**
+ * @name         Alan Walker Theme
+ * @description  dark theme with Alan Walker's logo as background, credit to DevilBro#4401 for settingsicons, credit to Nyria#3863 for userbuttons in the serverbar and spotifyControls
+ * @author       lolpowerluke
+ * @version      1.0.9
+ * @source       https://github.com/lolpowerluke/discordtheme/blob/main/alanWalker.theme.css
+ * @website      https://github.com/lolpowerluke
+ * @invite       GwjrQVDNJ2
+*/
+
+@import url('https://lolpowerluke.github.io/bd-themes/AlanWalkerTheme/main.css');
+/*all variables here*/
+:root {
+  /*title bar*/
+  --title-bar-content-color: blue;
+  /*Theme Dependent Stuff*/
+  --title-bar-content: "DISCORD (Alan Walker Theme)";
+  --main-background: url('https://i.imgur.com/tt9snCk.png?1') center right no-repeat;
+  --back-selected-dm-pic: url('https://i.imgur.com/tmY77W1.png') center left no-repeat;
+  --home-button-background: url('https://i.imgur.com/PrJ5xwf.png');
+  --back-pos-dm: -25px;
+  --home-button-background-size: 45px;
+  /*Other Stuff*/
+  --crash-screen-image: url('https://external-preview.redd.it/lxXR2dIc6jmGIsw5y-wmKIrluG6KndtXBg4uiECIlKM.png?auto=webp&s=7c44375ed91956c4025cd5826e541032c1e9b7a4');
+  /*USRBG*/
+  --USRBG-popout-background: url('https://i.imgur.com/tt9snCk.png?1');
+
+  /*borders*/
+  --border-color: 255, 0, 0;
+  --border-color-blue: 0, 0, 255;
+  --border-opacity: 0.5;
+  --border-opacity-blue: 0.8;
+
+  /*boxes*/
+  --back-color-boxes: rgba(0, 0, 255, 0.2);
+  --back-color-boxes-hover: rgba(0, 0, 255, 0.4);
+  --back-color-danger-boxes: rgba(255, 0, 0, 0.5);
+  --back-color-danger-boxes-hover: rgba(255, 0, 0, 0.7);
+
+  /*switches*/
+  --switch-off: rgba(255, 0, 0, 0.5);
+  --switch-on: rgba(0, 0, 255, 0.829);
+
+  /*badges*/
+  --back-color-number-badges: rgb(0, 26, 255);
+
+  /*playing card border colors*/
+  --playing-color: 114, 137, 218;
+  --spotify-color: 0, 255, 34;
+  --streaming-color: 89, 54, 149;
+
+  --separator: 17, 0, 255;
+  --back-user-buttons: rgba(38, 0, 255, 0.158);
+  --selcted-dm-color: rgba(255, 0, 0, 0.658);
+  --bdfdb-blurple: var(--back-color-number-badges);
+  /*unread pill*/
+  --unread-pill: rgb(0, 0, 255);
+  --unread-pill-shadow: rgb(255, 0, 0);
+  /*plugin colors*/
+  --permission-header: rgb(0, 0, 0);
+  --permission-role-side: rgba(0, 0, 0, 0.575);
+  --permission-perm-side: rgba(0, 0, 0, 0.678);
+  --image-utils-back: black;
+  --image-utils-border: rgb(0, 26, 255);
+  /*status colors*/
+  --online: rgb(0, 255, 0);
+  --idle: rgb(255, 166, 0);
+  --dnd: rgb(255, 0, 0);
+  --offline: #747f8d;
+  --streaming: #a068ff;
+  /*discords integrated colors*/
+  --interactive-normal: white;
+  --interactive-active: white;
+  --interactive-hover: white;
+  --channels-default: white;
+  --background-primary: rgba(0, 0, 0, 0.514);
+  --background-secondary: rgba(61, 61, 61, 0.137);
+  --background-secondary-alt: var(--back-color-boxes);
+  --background-tertiary: rgb(1, 0, 5);
+  --background-floating: rgb(23, 24, 105);
+  --background-mentioned: rgba(255, 0, 0, 0.281);
+  --info-warning-foreground: red;
+  /*server folders*/
+  --server-folder-1: rgba(0, 17, 255, 0.397);
+  --server-folder-2: rgba(4, 0, 255, 0.349);
+  /*other stuff*/
+  --channeltextarea-background: rgba(0, 10, 148, 0.425);
+  --user-buttons-spacing: 8px;
+  --back-color: rgb(0, 0, 0);
+  --gr-one: linear-gradient(to right, transparent, rgb(105, 0, 0));
+  --back-selected-dm-color: black;
+  --text-link: #00ff15;
+  --text-link-back: black;
+  --text-focus: white;
+  --back-account: black;
+  --standard-account-height: 52px;
+  --popout-header: rgba(0, 4, 255, 0.384);
+  --popout-scroller: rgba(0, 4, 255, 0.247);
+  --create-server: rgba(0, 0, 0, 0.911);
+  --create-server-text-color: rgb(255, 255, 255);
+  --create-server-choices: black;
+  --create-server-choices-border: rgb(255, 0, 0);
+  --create-server-footer-button: black;
+  --create-server-footer-button-hover: rgba(255, 255, 255, 0.123);
+  --upload-popout-footer: rgba(0, 0, 0, 0.644);
+  --upload-popout-top: rgb(0, 0, 0);
+  --upload-popout-seperator: rgb(255, 255, 255);
+  --back-color-search-bar: rgba(0, 0, 255, 0.349);
+  --screen-share-main: rgba(0, 0, 0, 0);
+  --avatar-radius: 5px;
+  --role-circle: 5px;
+  --message-hover: rgba(38, 0, 255, 0.171);
+  --back-date-viewer: rgba(25, 0, 255, 0.363);
+  --typing-border: red;
+  --border-zoom: red;
+  --red: red;
+  --red-2: rgba(255, 0, 0, 0.411);
+  --green: #47b543;
+  --green-2: #008549fa;
+  --cp-size: 6px;
+  /*user popouts*/
+  --user-popout: black;
+  --user-popout-alt: rgba(0, 0, 255, 0.24);
+  /*scroller (I think)*/
+  --scroller-color: black;
+  /* message separator*/
+  --message-separator-line: rgba(17, 0, 255, 0.5);
+  --unread-message: rgb(255, 0, 0);
+  --unread-message-line: rgb(255, 0, 0);
+  /*emoji & gif*/
+  --back-header-gifemoji: rgba(0, 0, 255, 0.432);
+  --back-side-gifemoji: rgba(0, 0, 255, 0.5);
+  --back-search-gifemoji: rgba(0, 0, 255, 0.486);
+  --back-body-gifemoji: rgba(0, 0, 255, 0.459);
+  --back-inspector-gifemoji: rgba(0, 0, 255, 0.418);
+  /*other stuff I tried to make work*/
+  --scrollbar-auto-scrollbar-color-thumb: red;
+  --scrollbar-auto-scrollbar-color-track: blue;
+  /*Link Preview*/
+  --linkpreview-background: transparent;
+  /*Version*/
+  --version-1-0-9: none;
+  --Blank: 0; /* An opacity for not hovered, 0 for hiding, 1 for showing (default: 0) */
+  /*other*/
+  --backdrop: hsl(0, 0%, 0%, 0.6);
+}

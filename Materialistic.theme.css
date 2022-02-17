@@ -1,0 +1,75 @@
+/**
+ * @name Materialistic
+ * @author BigMeanie
+ * @version 1.0.0
+ * @description A clean material design theme for discord with a simple accent color
+ * @invite P9fAbrDjQ6
+*/
+
+@import url('https://booglesmcgee.github.io/Materialistic-Discord/Materialistic.css');
+:root {
+	
+	/*--Change the default accent colors--*/
+	--accent-color-main: #b288e6;
+	--accent-color-main-opacity:#b288e6CC;
+	--accent-color-dark: #322c3a;
+	--accent-color-darker: #251f2d;
+	
+	/*--Change the default background colors--*/
+	--background-color-main: #212121;
+	--background-color-dark: #191919;
+	--background-color-darker: #131313;
+	--background-color-darkest: #040404;
+	--background-tertiary:var(--background-color-main);
+	--background-primary:var(--background-color-main);
+	
+	/*--Change the default channel list width--*/
+    --channels-width: 200px;
+	
+	/*--Change the default member list width--*/
+	--members-width: 200px;
+	
+	/*Change the default server list sizing--*/
+	--server-icon-size: 30px;
+	--server-icon-spacing: 7px;
+	--server-container-padding: 5px;
+
+	/*--Change the default radial status settings--*/
+	--rs-small-spacing: 2px;
+	--rs-large-spacing: 3px;
+	--rs-width: 2px;
+	--rs-avatar-shape: 50%;
+	--rs-online-color: #488558;
+	--rs-idle-color: #faa61a;
+	--rs-dnd-color: #ff6962;
+	--rs-offline-color: #636b75;
+	--rs-streaming-color: #643da7;
+	--rs-invisible-color: #747f8d;
+	
+	/*--Change the default font sizes--*/
+	--main-font-size:13px;
+	--secondary-font-size:11px;
+	--subtext-font-size:9px;
+	
+	/*--Change the default button and text colors--*/
+	--button-no-accent: #a8a8a8;
+	--text-color: #cfcfcf;
+	--text-color-dark:#6D7178;
+	
+	/*--Change the default Scrollbar colors--*/
+	--scrollbar-thin-thumb: var(--accent-color-main);
+	--scrollbar-thin-track: transparent;
+	--scrollbar-auto-thumb: var(--accent-color-main);
+	--scrollbar-auto-track: var(--background-color-dark);
+	--scrollbar-auto-scrollbar-color-thumb: var(--accent-color-main);
+	--scrollbar-auto-scrollbar-color-track: var(--background-color-dark);
+	
+	/*--Misc--*/
+	--text-link: var(--accent-color-main);
+	--background-mentioned: var(--accent-color-darker);
+	--background-mentioned-hover: var(--accent-color-dark);
+	--radio-group-dot-foreground:var(--accent-color-main);
+	
+	/*--DO NOT CHANGE--*/
+	--main-font: Montserrat;
+}

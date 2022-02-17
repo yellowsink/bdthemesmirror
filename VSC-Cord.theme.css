@@ -1,0 +1,27 @@
+/**
+ * @name VSC Cord
+ * @version 1.4
+ * @description Theme based on Visual Studio Code design. Credit to userMacieG#7591 for allowing me to use stuff from his Discord.tv theme.
+ * @author Xyhlo#9766
+*/
+
+@import url("https://xhylo.github.io/Visual-Studio-Code-BD-theme/EditedVSCC.theme.css");
+
+/* VSC Cord */
+:root {
+    --color-brand: #111C2F;
+    --color-brand-darker: #0c1420;
+    --color-brand-lighter: #4373c5;
+    --color-red: #e91916;
+    --color-red-darker: #bb1411;
+    --color-orange: #ffca61;
+    --color-orange-darker: #fcc439;
+    --background-orange: rgba(255, 165, 0, 0.10);
+    --color-green: #48bee2;
+    --color-green-darker: #a5a5a5b7;
+    --color-gray: #72767d;
+    --color-gray-darker: #4f545c;
+    --shadow: 0 4px 8px rgba(0, 0, 0, .4), 0 0 4px rgba(0, 0, 0, .4);
+    --shadow-bottom: 0 1px 2px rgba(0, 0, 0, .9), 0 0 2px rgba(0, 0, 0, .9);
+    --user-background: #18181b;
+}

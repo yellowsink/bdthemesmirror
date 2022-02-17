@@ -1,0 +1,15 @@
+/**
+ * @name Eclipse
+ * @author Next
+ * @description Simple Dark Theme
+ * @version 1.3
+ * @authorId 319955529873227787
+ */
+ @import url(https://nextr0ll.github.io/Eclipse/core.css);
+ :root {
+    --rgb: 230, 100, 90; /* Main color */
+    --main-black: #1C2120;
+    --secondary-black: #111411;
+    --third-black: #171b19;
+    --fourth-black: #1a1f1d;
+ }

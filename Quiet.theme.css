@@ -1,0 +1,30 @@
+/**
+ * @name         Quiet
+ * @description  Dark and Quiet. Easy on the eyes.
+ * @author       Izy
+ * @version      2.0
+ * @source       https://github.com/squee666/Discord-Themes/blob/master/Themes/Quiet.theme.css
+ * @invite       TeRQEPb
+ * @authorId     107511169366888448
+ */
+
+/* IMPORT CSS FROM GITHUB */
+@import url("https://cdn.statically.io/gh/squee666/Discord-Themes/master/css/Quiet.css");
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------
+IMPORTANT: CHANGE DISCORDS THEME TO DARK THEME IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
+---------------------------------------------------------------------------------------------------------------------------------------------
+===== CUSTOMIZABLE COLORS =====
+*/
+:root{
+--mc: #cc1444 !important;                                   /*Main Colour*/     
+--hc: #770425 !important;                                   /*Hover Colour*/       
+--br: 50px !important;                                       /*RoundNess of Icons*/    
+--QT: #19191b ;                                             /*Quiet Theme Colour*/    
+--QTD: #121213;                                             /*Quiet Off Parts Colour*/   
+}
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------
+TROUBLESHOOTING: IF YOU NEED ANY HELP GO TO https://discord.gg/TeRQEPb
+---------------------------------------------------------------------------------------------------------------------------------------------
+*/ 

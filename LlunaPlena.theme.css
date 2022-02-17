@@ -1,0 +1,39 @@
+/**
+ * @name         Lluna Plena
+ * @description  Clean dark Discord theme
+ * @donate       https://bit.ly/3fnzq1Z
+ * @source       https://github.com/rmkx/rmkx.github.io/blob/main/LlunaPlena/src/llunaplena.css
+ * @invite       HnGWVQbQBv
+ * @author       rmkx
+ * @version      1.0 
+ */
+
+@import url(https://rmkx.github.io/LlunaPlena/src/llunaplena.css);
+
+:root {
+    --channel-color: #293f47; /* Selected channel and background color | Default #293f47;*/
+    --chat-color: #070707; /* Backgroung color for chat | Default #070707*/
+    --chat-shadow-color: #293f47; /*Color for the chat box shadow | Default #293f47*/
+    --button-color: #293f47; /*Color for some of the buttons | Default #293f47*/
+    --activity-color: #181717; /*Color for the activity bar | Default #181717*/
+    --background-primary: #030303; /* Primary theme color | Default #030303*/
+    --background-secondary: #030303; /*Secondary theme color | Default #030303*/
+    --background-tertiary: #030303; /*Tertiary theme color | Default #030303*/
+}
+
+.theme-dark, .theme-light {
+    --chat-scrollbar-width: 20px; /*Changes the scrollbar width on chat | Default 20px*/
+    --scrollbar-thumb: #293f47; /*Changes the scrollbar base color | Default #293f47*/
+    --background-floating: #030303; /*Right click on user floating background | Default #030303*/
+    --background-modifier-hover: #293f47; /*Changes the hover on users color | Default #293f47*/
+    --background-message-hover: #293f4757; /*Changes the background of the hovered messages in chat | Default #293f4757*/
+    --text-muted: #63a4a8; /*Changes the color of the font of some parts of the Theme (search bar, etc) | Default #63a4a8*/
+    --text-link: #8dfce9; /*Changes the color of the links | Default #8dfce9*/
+    --channels-default: #afafaf; /*Changes the color of the channel names | Default #afafaf*/
+    --blue-hue-elements: #63a4a8; /*Color code for some parts of the theme | Default #63a4a8*/
+    --background-modifier-accent: #293f47; /*Color for the lines separating some elements of some menus | Default #293f47*/
+}
+.children-rWhLdy div[style*="display: grid;"] > div {
+    border: 1px solid var(--channel-color)!important;
+    display: grid!important;
+}

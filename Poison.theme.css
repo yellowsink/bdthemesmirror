@@ -1,0 +1,48 @@
+/**
+* @name         Poison
+* @description  Enjoy Discord with a stylish dark theme with vibrant green elements
+* @donate       https://bit.ly/3fnzq1Z
+* @source       https://github.com/rmkx/rmkx.github.io/blob/main/Poison/src/poison.css
+* @author       rmkx
+* @invite       HnGWVQbQBv
+* @version      1.0.1 
+*/
+
+@import url('https://rmkx.github.io/src/avatarStyle.css'); /*Avatar's style mini-theme*/
+@import url('https://rmkx.github.io/src/hideGuilds.css'); /*Comment line if you don't want servers list to hide | This moves it to the default position*/
+@import url('https://rmkx.github.io/Poison/src/hideMembers.css'); /*Comment line if you don't want servers' members to hide*/
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap'); /*Import fonts*/
+@import url('https://rmkx.github.io/Poison/src/poison.css'); /*Main theme import*/
+
+:root {
+    /*Background settings*/
+    --background-image: url('https://i.imgur.com/B5pCrRt.jpg'); /*Background image*/
+    --menu-bg: url('https://i.imgur.com/pvk9Zir.png'); /*Background image for some panels, like right click*/
+    --bg-blur: 0px; /*Background blur | Default 0px*/
+    --bg-opacity: 0.4; /*Background opacity | Default 0.4*/
+
+    /*Server member panel*/
+    --members-hiding: 80%; /*Position of the members panel when it hides | Default 80%*/
+    --members-showing: 0%; /*Position of the members panel when it shows | Default 0%*/
+    --transition-speed: 0.35s; /*Changes the showing speed | Default 0.35s*/
+
+    /*General settings*/
+    --general-radius: 5px; /*Changes the radius of most modals | Default 5px*/
+    --main-color: 52, 52, 52; /*Main color of the theme | WARNING: USE RGB VALUES IF YOU CHANGE THE COLOR | Default 52, 52, 52*/
+    --main-accent: 147, 227, 32; /*Theme accent color | WARNING: USE RGB VALUES IF YOU CHANGE THE COLOR | Default 147, 227, 32*/
+    --avatar-radius: 5px; /*Avatar's radius | Default 5px*/
+    --links-color:  147, 227, 32; /*Changes the color of the links | Default 147, 227, 32*/
+    --settings-width: 60%; /*Width for the settings window | Default 60%*/
+    --settings-heigth: 85%; /*Width for the settings window | Default 85%*/
+    --embed-border: 0px; /*Border for some of the embeds | Default 0px*/
+    --embed-bg: rgba(0,0,0,0.75); /*Embeds background | Default rgba(0, 0, 0, 0.75)*/
+    --selection-bg: rgba(52, 52, 52, 0.6); /*Changes the background of the selected text | Default rgba(52, 52, 52, 0.6)*/
+    --selection-color: rgba(var(--main-accent), 1); /*Changes the color of the selected text | Default rgba(var(--main-accent), 1)*/
+    --scrollbar-color: rgba(var(--main-accent), 0.4); /*Changes the color of the scrollbar | Default rgba(var(--main-accent), 0.4)*/
+    --icon-padding: 35px; /*Changes the padding between the icon and the text | Default 35px*/
+
+
+    /*Font*/
+    --font: 'Fjalla One', sans-serif; /*Main font*/
+    --message-size: 90%; /*Chat message font size | Default 90%*/
+}

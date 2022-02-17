@@ -1,0 +1,35 @@
+/**
+ * @name piOS Forever
+ * @author Saltssaumure#7557
+ * @description SUPERHOT piOS inspired theme. Now automatically updates, forever!
+ * @version Autoupdate
+ * @source https://github.com/Saltssaumure/pios-discord-theme
+ * @website https://discord.gg/9eAwJF8
+*/
+
+/*
+                                                Made by:
+ _______  _______  _    _________ _______  _______  _______           __   __           _______  _______ 
+(  ____ \(  ___  )( \   \__   __/(  ____ \(  ____ \(  ___  )|\     /|(  \ /  )|\     /|(  ____ )(  ____ \
+| (____\/| (___) || |      | |   | (____\/| (____\/| (___) || |   | || || || || |   | || (____)|| (__  \/
+(_____  )|  ___  || |      | |   (_____  )(_____  )|  ___  || |   | || |(_)| || |   | || __  __)|  __)   
+/\____) || )   ( || (____/\| |   /\____) |/\____) || )   ( || (___) || )   ( || (___) || ) \ \__| (____/\
+\_______)|/     \|(_______/)_(   \_______)\_______)|/     \|(_______)|/     \|(_______)|/   \__/(_______/
+                                              donut steel!
+											  
+Discord: Saltssaumure#7557
+Twitter: @Saltssaumure
+Github: https://github.com/Saltssaumure/pios-discord-theme
+
+Current version: Forever (Autoupdates from Github!)
+
+Join the Official Superhot Discord! https://discord.gg/9eAwJF8
+
+*/
+
+@import url("https://saltssaumure.github.io/pios-discord-theme/piOStheme.css");
+
+:root
+{
+	--compact-message-spacing: 1; /* Space between messages in compact mode, ie. box mode. Default: 1 */
+}

@@ -1,0 +1,55 @@
+/**
+* @name        NOVATURIENT
+* @author      ∤ YABOIWQ ∤
+* @description A theme that god chose to let you have, ENJOY!
+* @source      https://github.com/warrayquipsome/NOVATURIENT/blob/main/addons.autumn.foliole.css
+* @version     ersion: AU
+*/
+@import url("https://warrayquipsome.github.io/NOVATURIENT/DiscordBrokeNVTR-fix.css");
+@import url("https://warrayquipsome.github.io/NOVATURIENT/HorizontalServer.css");
+@import url("https://warrayquipsome.github.io/NOVATURIENT/AvatarOnlyMemberList.css");
+/*                                                                                                                              */
+/*                 ███╗  ██╗ █████╗ ██╗   ██╗ █████╗ ████████╗██╗   ██╗██████╗ ██╗███████╗███╗  ██╗████████╗                    */
+/*                 ████╗ ██║██╔══██╗██║   ██║██╔══██╗╚══██╔══╝██║   ██║██╔══██╗██║██╔════╝████╗ ██║╚══██╔══╝                    */
+/*                 ██╔██╗██║██║  ██║╚██╗ ██╔╝███████║   ██║   ██║   ██║██████╔╝██║█████╗  ██╔██╗██║   ██║                       */
+/*                 ██║╚████║██║  ██║ ╚████╔╝ ██╔══██║   ██║   ██║   ██║██╔══██╗██║██╔══╝  ██║╚████║   ██║                       */
+/*                 ██║ ╚███║╚█████╔╝  ╚██╔╝  ██║  ██║   ██║   ╚██████╔╝██║  ██║██║███████╗██║ ╚███║   ██║                       */
+/*                 ╚═╝  ╚══╝ ╚════╝    ╚═╝   ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚══╝   ╚═╝                       */
+                                                                                                                                  
+/*   ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════════════════╗     */
+/*   ║        ( ͡👁️ ᴗ ͡👁️)🗡     ║                             I̴̩͘t̴̰̅'̸̬̀s̶̻͝ ̴̧́ñ̷̡o̸̱͝t̴̳̒ ̴̩̀ẁ̵̡h̴̯͝a̷̳͒ṯ̷̃ ̷͖̎i̶͇̓t̶̗͋ ̴͍̓s̶̜͒e̴͔̔e̴̜̋m̴̱̊s̶̛͚.̶̝̀.̸̥̆.̵̣̐                                  ║     */
+/*   ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝     */ 
+
+/*default skin/theme will be Autmn Foliole, ENJOY!*/ 
+
+/**credit**/
+/**Fancy channel indicators-by LuckFire#4800**/
+/**settings icon by DevilBro#4401**/
+/**blurple recolour by DevilBro#4401**/
+/**horizontal server list by Gibbu#1211**/
+
+
+/**secondary credit**/
+/**credit to Demented_Elmo#1234 for the custom searchbar and chatbox texts code **/
+#app-mount [data-user-id="810543628307922955"].userPopout-xaxa6l {background-image: url(https://cdn.discordapp.com/attachments/872597872472907896/876122913869299782/Screen_Shot_2021-08-14_at_9.09.59_AM.png);}
+#app-mount [data-user-id="810543628307922955"] .bodyInnerWrapper-26fQXj {background: transparent;}
+
+
+/**third credit [css snippets] **/
+/**
+custom badge by Xyhlo
+remove limit css editor by Qb
+do not mirror video preview by David
+avatar only member list by Doggybootsy
+home icon by David
+highlither by Tropical
+smooth discord msg box by Xyhlo
+hover channels animated by Xyhlo
+unread message pill edits by snow
+**/
+
+
+/*roots*/
+:root { /*for autumn foliole*/
+ --background-image: url(https://i.imgur.com/cxcxDlZ.jpg);
+}

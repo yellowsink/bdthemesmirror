@@ -1,0 +1,83 @@
+/**
+ * @name negcontrast
+ * @author jackcook99
+ * @version Auto
+ * @description a dim low contrast them meant to be easy on the eyes
+**/
+/*im running a test*/
+@import url("https://cyb3ry4nd3r3.github.io/negcontrast/negcontrastimport.theme.css");
+@import url("https://cyb3ry4nd3r3.github.io/negcontrast/negfont/stylesheet.css");
+@import url("https://cyb3ry4nd3r3.github.io/negcontrast/tuckedservers.css");/*comment this out to disable sliding servers*/
+:root {
+	/*Primary*/
+	--lv1:   #000000;
+	--accent: #124275;
+	--hover: #0e355f;
+	--header-primary:#a9a9a9;
+	--bg: url('https://i.imgur.com/GdnbuVj.jpg');
+	--codeblock:rgba(15,15,15,0.1);
+	--tooltip-color:#f6f6f7;
+	--bg-opacity: 0.75;
+	--bg-fade: 80%;
+	--contrast:  .75;
+	--brightness:   .75;
+	--viewwidth: 240px;
+	--hiddenwidth: 10px;
+	/*Support for other themes*/
+	--mc: var(--accent);
+	--hc: var(--hover);
+	--main-color: var(--accent);
+	--hover-color: var(--hover);
+	--roundness: var(--user-roundness);
+	--lvl-bg-opacity:var(--bg-opacity);
+	--lvl-bg-fade:var(--bg-fade);
+	--online:var(--success);
+	--idle:var(--caution);
+	--dnd:var(--danger);
+	--offline:var(--unavailable);
+	--invisible:var(--invisible);
+	--streaming:var(--twitch-purple);
+
+	/*Discord Vars*/
+	--deprecated-store-bg: var(--lv1);
+	--background-primary: var(--lv1);
+	--background-secondary: var(--lv1);
+	--background-secondary-alt:var(--lv1);
+	--background-tertiary: var(--lv1);
+	--channeltextarea-background:var(--lv1);
+	--background-modifier-active:transparent;
+	--interactive-active: var(--channels-default);
+	/*Status*/
+	--success: #085827;
+	--caution: #8b7200;
+	--danger: #7a0606;
+	--unavailable: #33373b;
+	--invisible: #444a52;
+	--information:#325d8d;
+	--twitch-purple: rgb(58, 29, 100);
+	--spotify-green:rgb(16, 92, 42);
+	--xbox-green:#0a4609;
+	--netflix-red:#91090f;
+
+	/*Roundness*/
+	--user-roundness:0;
+	--guilds-roundness:0;
+
+	/*Fonts*/
+	--sizelg:1.25rem;
+	--size0: 1.15rem;
+	--size1: .925rem;
+	--size2: .8rem;
+	--size3: .75rem;
+	--size4: .7rem;
+	--size5: .5rem;
+	--size6: .35rem;
+	--font:    'Inter', BlenderProBold;
+	--letter-spacing: -.02rem;
+	font-size: 17px !important;
+	--theme-name:  'negcontrast';
+	--theme-version:    '1.2';
+
+	/*Toasts*/
+	--toast-background:var(--lv1);
+}

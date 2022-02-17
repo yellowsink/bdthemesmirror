@@ -1,0 +1,54 @@
+/**
+  * @name Revert Rebrand
+  * @author GooseNest
+  * @donate https://github.com/sponsors/CanadaHonk
+  * @description Reverts Discord's 2021 rebrand (font, colors, reactions, mentions, loading screen, home icon, reply ping color, and more)
+  * @invite neMncS2
+  * @source https://Goose-Nest.github.io/GT-RevertRebrand/src/RevertRebrand.theme.css
+  * @website https://github.com/Goose-Nest/GT-RevertRebrand
+  * @version 5.1
+*/
+
+/* If you do not want some things reverted, commend out imports like /* @import url("...") */
+
+/* [Recommended] Revert CSS variables: colors, fonts */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/variables.css');
+
+/* Generated hardcoded color fixes */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/hardcoded.css');
+
+
+/* Individual components: */
+
+/* Revert mentions */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/components/mentions.css');
+
+/* Revert reactions */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/components/reactions.css');
+
+/* Revert profile pictures */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/components/pfps.css');
+
+/* Revert folders (default colors back to old blurple) */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/components/folders.css');
+
+/* Revert windows wordmark */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/components/wordmark.css');
+
+/* [Optional] Revert new user popouts */
+/* @import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/components/userPopout.css'); */
+
+
+/* General changes: */
+
+/* Revert some BD specific elements */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/general/bd.css');
+
+/* Revert some inputs */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/general/inputs.css');
+
+/* Revert some SVGs (colors for smaller icons) */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/general/svgs.css');
+
+/* Revert some other minor things */
+@import url('https://Goose-Nest.github.io/GT-RevertRebrand/src/general/other.css');

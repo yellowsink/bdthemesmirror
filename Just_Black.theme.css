@@ -1,0 +1,24 @@
+/**
+ * @name Just_Black
+ * @version 4.2.1
+ * @author Ме́филес#9198
+ * @authorId 376086802961793024
+ * @description Revival of JustBlack Theme by Dddsasul: "A nice and black theme"
+ * @source https://github.com/Mephiles-the-Dark/Better_Discord/tree/master/Themes/Just_Black/
+ * @invite sbA3xCJ
+*/
+@import url("https://Mephiles-the-Dark.github.io/Better_Discord/Themes/Just_Black/Just_Black.css");
+:root {
+	--Dark: black; /* A colour (default: black) */
+	--Light: white; /* A colour (default: white) */
+	--Just_Black_Accent1: 91, 187, 255; /* An RGB triplet (default: 91, 187, 255) */
+	--Just_Black_Accent2: 41, 137, 216; /* An RGB triplet (default: 41, 137, 216) */
+	--Just_White_Accent1: 164, 68, 0; /* An RGB triplet (default: 164, 68, 0) */
+	--Just_White_Accent2: 214, 118, 39; /* An RGB triplet (default: 214, 118, 39) */
+	--Blue: blue; /* An extra accent colour for Dark Theme (default: blue) */
+	--Orange: orangered; /* An extra accent colour for Light Theme (default: orangered) */
+	--Fuchsia: fuchsia; /* A colour (default: fuchsia) */
+	--Active: rgb(51, 153, 51); /* A colour for clicking (default: rgb(51, 153, 51)) */
+	--Blank: 0.7; /* An opacity for not hovered, 0 for hiding, 1 for showing (default: 0.7) */
+}
+/* One may post code snippets below this line */

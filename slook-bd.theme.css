@@ -1,0 +1,638 @@
+/**
+ * @name Slook
+ * @author Leeprky
+ * @version 3.2
+ * @description Comfy Chat Theme
+ * @source https://github.com/leeprky/Slook-Remastered
+ * @updateUrl https://github.com/leeprky/Slook-Remastered/blob/main/source/support/betterdiscord/slook-bd.theme.css
+ * @authorId 224524143482241035
+ * @invite Ff3rqAYB89
+ * @donate https://www.paypal.com/paypalme/leeparkinson22
+ * @website https://leeprky.github.io/
+*/
+/*  ------------------------------------------
+             SLOOK V3 (BetterDiscord)
+                      v3.2
+                - leeprky#2063 -
+    ------------------------------------------  */
+
+/* SLOOK Source Code */
+@import url(https://leeprky.github.io/themes/slook/slook-source.css);
+@import url('https://leeprky.github.io/snippits/coolsniipitsforthemes.css');
+
+/* Other Imports */
+/* Visuals */
+/* @import url(https://raw.githack.com/v-briese/Channel-Icons/main/channelicons.theme.css); */
+ @import url(https://raw.githack.com/snappercord/Settings-Icons/main/settingsicons.css); 
+
+@import url(https://leeprky.github.io/themes/BaseStuff/alt-color.css);
+@import url(https://leeprky.github.io/themes/FullyThemedDiscord/FullyThemedDiscord.css);
+@import url(https://ghostmander.github.io/discordfont/DiscordFont.css);
+
+/* Other Imports */
+@import url(https://raw.githack.com/DiscordStyles/HorizontalServerList/master/HorizontalServerList.theme.css);
+@import url(https://discordstyles.github.io/RadialStatus/base.css);
+
+@import "https://leeprky.github.io/themes/Ovel/imports/07-extra/version.css";
+:root {--version: "v3.0.0"; --build: "390"; --outdated_slook-390: none;}
+
+/*  ----------------------------
+         GLASSCORD SUPPORT
+    ----------------------------  */
+
+/*
+  
+:root{
+	--glasscord-win-blur: blurbehind;
+	--glasscord-macos-vibrancy: fullscreen-ui;
+	--glasscord-linux-blur: true;
+	--glasscord-titlebar: osx;  
+}
+body{
+    background-color: transparent;
+}
+#app-mount{
+	background-color: rgba(0, 0, 0, 0.301);
+	border-radius: 10px 10px 10px 10px; 
+	border-color: transparent;
+}
+#app-mount .guilds-1SWlCJ .scrollerBase-289Jih {
+  background: transparent;
+}
+.theme-dark {
+	--background-primary: #0c0c0c00!important;
+	--background-secondary: #0a0a0a00!important;
+	--background-tertiary: #0c0c0c73!important;
+};
+#app-mount .guilds-1SWlCJ, .base-3dtUhz {
+  top: calc(var(--server-container) + -32px) !important;
+}
+.platform-osx .container-1r6BKw {
+  -webkit-app-region: none;
+}
+#app-mount .app-1q1i1E .base-3dtUhz {
+  margin-top: 32px;
+}
+.panels-j1Uci_ {
+  background-color: transparent;
+}
+.scrollableContainer-2NUZem {
+  background-color: rgba(0, 0, 0, 0.534);
+}
+.contentRegionScroller-26nc1e, .contentRegion-3nDuYy, .standardSidebarView-3F1I7i, .sidebarRegionScroller-3MXcoP {
+  background: rgba(22, 22, 22, 0.596);
+}
+
+/*  ----------------------------
+       GLASSCORD SUPPORT END
+    ----------------------------  */
+
+/*  ------------------------------------------
+         SLOOK Customisable Configuration
+                    v3.0
+               -leeprky#2063-
+    ------------------------------------------  */
+
+/*
+USRBG Profile Modals by Tropix126.
+=========================================== */
+
+@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
+
+.root-SR8cQa {
+  transform: translateZ(0);
+}
+.header-QKLPzZ .wrapper-3t9DeA::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  pointer-events: none;
+  background: var(--user-background) center/cover no-repeat;
+  -webkit-mask: linear-gradient(black, transparent 80%);
+}
+
+.headerInfo-30uryT,
+.tabBarItem-1b8RUP,
+.activity-1ythUs {
+  z-index: 1;
+  position: relative;
+}
+
+.userPopout-3XzG_A {
+	transform:translateZ(0);
+}
+
+.userPopout-3XzG_A .wrapper-3t9DeA::after {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+	opacity: .5;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: var(--user-popout-position) center;
+	background-image: var(--user-background);
+	-webkit-mask-image: linear-gradient(#000, transparent);
+}
+
+.userPopout-3XzG_A  .header-2BwW8b,
+.userPopout-3XzG_A  .scroller-2FKFPG,
+.userPopout-3XzG_A  .footer-1fjuF6 {
+	z-index: 1;
+}
+
+/*
+USRBG Popouts by Tropix126.
+=========================================== */
+
+:root {
+    --rs-small-spacing: 2px;  /* Spacing between avatar and status | MUST end in px */
+    --rs-large-spacing: 3px;  /* Spacing between avatar and status for user popouts & modals/profiles | MUST end in px */
+    --rs-width: 2px;  /* Width/thickness of status border */
+    --rs-avatar-shape: 50%;  /* 50% for round - 0% for square */
+    --rs-online-color: #43b581;  /* Colour for online status */
+    --rs-idle-color: #faa61a;  /* Colour for idle status */
+    --rs-dnd-color: #f04747;  /* Colour for dnd status */
+    --rs-offline-color: #636b75;  /* Colour for offline status */
+    --rs-streaming-color: #643da7;  /* Colour for streaming status */
+    --rs-invisible-color: #747f8d;  /* Colour for invisible status - Note: this will only show for your own invisibility */
+    --rs-phone-visible: block; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+  }
+
+  .wordmark-2iDDfm:after{content:var(--watermark-text);font-size:20px;font-weight:700;position:absolute;width:4000px;top:7px;color:var(--background-accent);margin-left:var(--watermark-text-left);font-family:Discord}
+  .wordmark-2iDDfm > svg{width:0}
+  @keyframes Gradient { 0%{background-position:0 50%} 50%{background-position:100% 50%} 100%{background-position:0 50%} }
+  #app-mount .titleBar-AC4pGV .wordmark-2iDDfm svg{width:0}
+  #app-mount .titleBar-AC4pGV .wordmark-2iDDfm::after{content:var(--watermark-text);position:absolute; font-family: "Discord" ; background:linear-gradient(var(--watermark-gradient));animation:Gradient 4s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200% 200%;font-weight:600;top:var(--watermark-text-top)}
+
+
+.typeWindows-1za-n7 > .wordmark-2iDDfm:before {
+    content: var(--watermark-version);
+    color: #fff;
+    font-family: "Discord" ;
+    font-size: 12px;
+    width: 10px;
+    height: 10px;
+}
+#app-mount .titleBar-AC4pGV .wordmark-2iDDfm svg {
+    margin-bottom: 15px;
+    margin-left: 4px;
+}
+
+.withFrame-haYltI {
+    height: 18px;
+    margin-bottom: var(--titlebar-bottom);
+}
+/* SLOOK Dark */
+.theme-dark {
+
+  --modal-playing-background-light: url(https://imgur.com/GZyPIBZ.jpg);
+  --expanded-playing-background-light: url(https://imgur.com/GZyPIBZ.jpg);
+  --call-background-light: url(https://imgur.com/GZyPIBZ.jpg);
+
+  --modal-playing-background-dark: url(https://imgur.com/L0Iih63.jpg);
+  --expanded-playing-background-dark: url(https://imgur.com/L0Iih63.jpg);
+  --call-background-dark: url(https://imgur.com/L0Iih63.jpg);
+
+  /* Lode Specific */
+--bd-color: #285651;
+--bd-color-hover: #224945;
+--alt-color: 40, 86, 81; /* RGB */
+--alt-color2: #285651; /* HEX */
+--alt-color3: 171; /* HSL */
+--new-message-pill: var(--alt-color2);
+
+  /* Keeping Consistancy With Discord */ 
+  --serverlist-background: var(--background-tertiary);
+  --memberlist-background: #1D1F22;
+  --win-titlebar: var(--background-tertiary);
+
+/* Other */
+--scrollbars: none; /* none or unset */
+
+/* Watermark */
+--watermark-text: "SLOOK";
+--watermark-version: "";
+--watermark-text-top: 6px;
+--watermark-text-left: 0rem;
+--watermark-gradient: 200deg, rgb(24, 189, 46), rgb(255, 255, 255) !important;
+--watermark-gradient-light: 200deg, rgb(10, 10, 10), rgb(8, 8, 8) !important;
+--titlebar-bottom: 5px;
+
+ /* Header Colours Colors */
+--modal-normal-primary-color: var(--background-secondary);
+--modal-normal-secondary-color: var(--background-secondary);
+--spotify-color: var(--alt-color2);
+--playing-color: var(--alt-color2);
+--streaming-color: #4d2b86;
+
+ /* Header Colors */
+--header-primary: #EAE1DF;
+--header-secondary: rgb(159, 161, 163);
+
+ /* Powercord Toast Colors */
+--toast-background: var(--background-primary) ;
+--toast-header: var(--background-secondary) ;
+--toast-content: #252B3B ;
+--toast-box-shadow: rgba(24, 21, 21, 0.932) ;
+--toast-border: rgba(21, 22, 22, 0);
+--toast-gradient: to right, rgb(64, 102, 172), rgb(53, 192, 127);
+
+ /* Text Colours */
+ --text-normal: #dcddde !important;
+ --text-muted: #72767d !important;
+ --text-link: #008C67 !important;
+ --channels-default: #8e9297 !important;
+ --interactive-normal: #b9bbbe !important;
+ --interactive-hover: #dcddde !important;
+ --interactive-active: rgb(231, 222, 222) !important;
+ --interactive-muted: #313233 !important;
+
+ /* Chat */
+--channeltextarea-background: var(--background-primary);
+--channeltextarea-background-hover: var(--background-secondary);
+
+ /* Background Colours */
+ --background-primary: #24262b;
+ --background-primary-alt: #24262b;
+ --background-secondary: #1d1f22;
+ --background-secondary-alt: #1d1f22;
+ --background-tertiary: #2f3236;
+ --background-accent: var(--alt-color2);
+ --background-floating: #18191c;
+ --background-floating: #2f3236;
+
+ /* Hovering Colours */
+ --background-modifier-hover: rgba(116,127,141,0.08);
+ --background-modifier-active: rgba(116,127,141,0.16);
+ --background-modifier-selected: rgba(116,127,141,0.24);
+ --background-modifier-accent: rgba(6,6,7,0.08);
+--background-message-hover: transparent;
+
+ /* Mentioned  Colours */
+--background-mentioned: rgba(89, 250, 26, 0.055);
+--background-mentioned-hover: rgba(58, 180, 20, 0.08);
+--background-message-hover: rgba(4,4,5,0.07);
+--background-mentioned-bar: var(--background-accent);
+
+--background-help-warning: rgba(56, 168, 151, 0.233);
+--background-help-info: rgba(244, 8, 0, 0.164);
+
+ /* Scrollbar Colours */
+--scrollbar-thin-thumb: rgba(56, 168, 151, 0.397);
+--scrollbar-thin-track: transparent;
+--scrollbar-auto-thumb: rgba(56, 168, 151, 0.363);
+--scrollbar-auto-track: rgba(56, 168, 151, 0.363);
+--scrollbar-auto-scrollbar-color-thumb: rgba(56, 168, 151, 0.384);
+
+/* Box Shadow On Floating Elements Colours */
+--elevation-stroke: 0 0 0 1px rgba(22, 24, 26, 0.329);
+--elevation-low: 0 1px 0 rgba(22, 25, 26, 0.329);
+--elevation-medium: 0 4px 4px rgba(22, 25, 26, 0.329);
+--elevation-high: 0 8px 16px rgba(22, 25, 26, 0.329);
+
+/* Other */
+--radio-group-dot-foreground: var(--alt-color);
+}
+
+/* SLOOK Light */
+
+.theme-light {
+        
+  /* Lode Specific */
+  --alt-color: 83, 182, 167; /* RGB */
+  --alt-color2: #53b6a7; /* HEX */
+
+  /* Other */
+  --scrollbars: none; /* none or unset */
+
+  /* Keeping Consistancy With Discord */ 
+  --serverlist-background: #cad7e0;
+  --memberlist-background: #cad7e0;
+  --win-titlebar: var(--background-tertiary);
+
+    /* Watermark */
+  --watermark-text: "LODE";
+  --watermark-text-top: 14px;
+  --watermark-text-left: 3.4rem;
+  --watermark-gradient: 270deg, #79a9d0, #1ddaa1;
+
+ /* Header Colours Colors */
+  --modal-normal-primary-color: #c6d4df;
+  --modal-normal-secondary-color: #c6d4df;
+  --spotify-color: var(--alt-color2);
+  --playing-color: var(--alt-color2);
+  --streaming-color: #4d2b86;
+
+    /* Header Colors */
+  --header-primary: #0f0f0e;
+  --header-secondary: rgb(43, 45, 46);
+
+ /* Powercord Toast Colors */
+  --toast-background: #e1e3eb;
+  --toast-header: #bdc0c7;
+  --toast-content: #e1e3eb;
+  --toast-box-shadow: rgba(24, 21, 21, 0.932);
+  --toast-border: rgba(21, 22, 22, 0);
+  --toast-gradient: to right, rgb(64, 102, 172), rgb(53, 192, 127);
+
+ /* Text Colours */
+  --text-normal: #111010;
+  --text-muted: var(--alt-color2);
+  --text-link: var(--alt-color2);
+  --channels-default: #242221;
+  --interactive-normal: #080808;
+  --interactive-hover: #1a1818;
+  --interactive-active: rgb(19, 17, 17);
+  --interactive-muted: #505355;
+
+ /* Chat */
+  --channeltextarea-background: #cbcbda;
+  --channeltextarea-background-hover: #f5f6fa;
+
+ /* Background Colours */
+  --background-primary: #cad7e0;
+  --background-titlebar: #cbd7e0;
+  --background-primary-alt: #cbd7e0;
+  --background-secondary: #dce5ec;
+  --background-secondary-alt: #dce5ec;
+  --background-tertiary: #eceff3;
+  --background-accent: var(--alt-color2);
+  --background-accent-gradient: #0f7464;
+  --background-floating: #bbc8d1;
+
+ /* Hovering Colours */
+  --background-modifier-hover: rgba(56, 168, 151, 0.411);
+  --background-modifier-active: rgba(56, 168, 151, 0.651);
+  --background-modifier-selected: rgba(56, 168, 151, 0.37);
+  --background-modifier-accent: rgba(56, 168, 151, 0.534);
+  --background-message-hover: transparent;
+
+ /* Mentioned  Colours */
+  --background-mentioned: rgba(56, 168, 151, 0.308);
+  --background-mentioned-hover: rgba(56, 168, 151, 0.425);
+  --background-mentioned-bar: var(--background-accent);
+
+  --background-help-warning: rgba(56, 168, 151, 0.233);
+  --background-help-info: rgba(244, 8, 0, 0.164);
+
+    /* Scrollbar Colours */
+  --scrollbar-thin-thumb: rgba(56, 168, 151, 0.397);
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: rgba(56, 168, 151, 0.363);
+  --scrollbar-auto-track: rgba(56, 168, 151, 0.363);
+  --scrollbar-auto-scrollbar-color-thumb: rgba(56, 168, 151, 0.384);
+
+    /* Box Shadow On Floating Elements Colours */
+  --elevation-stroke: 0 0 0 1px rgba(22, 24, 26, 0.329);
+  --elevation-low: 0 1px 0 rgba(22, 25, 26, 0.329);
+  --elevation-medium: 0 4px 4px rgba(22, 25, 26, 0.329);
+  --elevation-high: 0 8px 16px rgba(22, 25, 26, 0.329);
+
+    /* Other */
+  --radio-group-dot-foreground: var(--alt-color);
+}
+
+/* Slook Extras */
+.guilds-1SWlCJ{background-color:var(--serverlist-background)}
+.members-1998pB,.members-1998pB>div{background-color:var(--memberlist-background)}
+.guilds-1SWlCJ{background-color:var(--serverlist-background-light)}
+.members-1998pB,.members-1998pB>div{background-color:var(--memberlist-background-light)}
+.powercord-toast .contents{background-color:var(--toast-content)}
+
+/* MemberList Scroller */
+.platform-win .scroller-1Bvpku {padding-top: 16px;}
+
+/*  ----------------------------------------------------
+                  Optional Features
+        Add A "/*" On The Lines Below The Comments
+                  To Disable Them
+    ----------------------------------------------------  */
+
+    /* Center Server List */
+/* OPTIONAL SERVER LIST
+#app-mount .wrapper-3NnKdC.guilds-1SWlCJ .scroller-1Bvpku {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*
+/* SLOOK FONT */
+:root {
+  --discord-font: 'Discord'; /* Delete For Regular Font */
+}
+
+/* Better Looking New Messages Pill By Leeprky#2063 */
+.unreadPill-2HyYtt {
+  color: rgb(252, 248, 248);
+  background-color:var(--new-message-pill);
+  border-radius: 5px;
+  width: 50px;
+  height: 16px;
+  margin-bottom: 9px;
+  margin-left: -10px;
+  position: static;
+  font-family: "Discord"; /* - DISCORD USERNAME FONT */
+  padding-left: 3px;
+}
+.divider-JfaTT5 {
+  border-top: thin solid var(--new-message-pill);
+  width: 420px;
+  height: 10px;
+  left: 70px;
+}
+/* Day History Pill */
+.unreadPillCap-3_K2q2 {
+  width: 0px;
+  height: 0px;
+}
+.content-1o0f9g {
+  font-size: 0.65rem;
+}
+.theme-dark .content-1o0f9g {
+  color: #e7dddd;
+  font-family: "Discord"; /* - DISCORD USERNAME FONT */
+  margin-top: -7px;
+  font-size: 0.60rem;
+  background-color: var(--new-message-pill);
+}
+.theme-light .content-1o0f9g {
+  color: #1b1a1a;
+  font-family: "Discord"; /* - DISCORD USERNAME FONT */
+  margin-top: 00rem;
+  font-size: 0.60rem;
+  background-color: var(--new-message-pill);
+}
+
+/* Add transparency & blur to the loading screen */
+.container-16j22k {
+  background-color: rgba(0,0,0,0.8);
+  backdrop-filter: blur(5px);
+}
+/* BoldText */
+.headerText-2F0828 {
+  font-size: 18px; 
+  font-family:'Discord';  /* - DISCORD USERNAME FONT */
+}
+.header-2RyJ0Y {
+  font-size: 16px;
+  font-family:'Discord';  /* - DISCORD USERNAME FONT */
+}
+.title-3sZWYQ {
+  font-size: 15px;
+  font-family:'Discord';  /* - DISCORD USERNAME FONT */
+}
+.container-2ax-kl {
+  font-size: 15px;
+  font-family:'Discord';  /* - DISCORD USERNAME FONT */
+}
+/* PictureInPicture */
+.header-2Zv56X {
+  font-size: 18px;
+  color:#eaedf0; 
+  font-family: 'Discord' /* - DISCORD USERNAME FONT */
+} 
+.description-22pzKs {
+  color: #c7cacc;
+  font-size: 11px
+}
+
+/* Bubble Member List OPTIONAL*/
+
+:root {
+  --hover-animation-speed: 0.35s;
+  --seperator-color: var(--background-accent);
+}
+.members-1998pB {
+  transition: transform var(--hover-animation-speed);
+}
+.membersWrap-2h-GB4 {
+ min-width: unset;
+ width: 40px;
+ justify-content: left;
+}
+.content-3QAtGj .subText-1KtqkB {
+ display: none;
+}
+.membersWrap-2h-GB4:hover .members-1998pB {
+  transform: translateX(-260px);
+}
+.membersWrap-2h-GB4 .members-1998pB .member-3-YXUe {
+  background-color: unset;
+  margin-left: 0px;
+  transition: margin-left var(--hover-animation-speed);
+}
+.membersWrap-2h-GB4:hover .members-1998pB .member-3-YXUe {
+  margin-left: 15px;
+}
+.membersWrap-2h-GB4:hover .membersGroup-v9BXpm {
+  transform: translateX(2px);
+}
+.membersWrap-2h-GB4 .membersGroup-v9BXpm {
+  cursor: default;
+  transform: translateX(-10px);
+  transition: transform var(--hover-animation-speed);
+  overflow: inherit;
+}
+.members-1998pB {
+border-radius: 18px 18px 18px 18px !important;
+left: 37px;
+margin-top: 100px;
+margin-bottom: 15px;
+}
+::-webkit-scrollbar {
+ display: none;
+}
+.membersWrap-2h-GB4 {
+left: 45px;
+margin-right: 40px;
+bottom: 75px;
+background-color: rgba(216, 27, 27, 0);
+}
+
+
+/* SlookChatBox OPTIONAL*/
+/* Name */
+.username-1A8OIy {
+  font-size: 1.15rem;
+  line-height: 2.375rem;
+  color: var(--header-primary);
+  display: inline;
+  margin-bottom:  15px;
+  margin-left: 0px;  /* - DISCORD USERNAME FONT
+  font-family:'Discord'; 
+  /* /* */
+}
+.cozy-3raOZG .timestamp-3ZCmNB {
+  font-size: 0.65rem;
+  height: 1.975rem;
+  color: #b6b9b4;
+  vertical-align:-webkit-baseline-middle; 
+  font-family: 'Discord';  /* - DISCORD USERNAME FONT */
+}
+.message-2qnXI6 .avatar-1BDn8e {
+  margin-bottom: -10px;
+  width: 50px;
+  height: 50px;
+  left: 10px
+}
+.message-2qnXI6 .contents-2mQqc9 .avatar-1BDn8e {
+  top: 15px !important;
+}
+.cozy-3raOZG .messageContent-2qWWxC {
+  margin-left: -68px;
+  padding-left: 72px;
+  margin-top: -5px;
+}
+/* Compact Support */
+.compact-T3H92H .contents-2mQqc9 {
+  height: 50px;
+}
+.compact-T3H92H .timestamp-3ZCmNB, .cozy-3raOZG .timestamp-3ZCmNB.alt-1uNpEt {
+  display: none;
+}
+.messagesWrapper-1sRNjr, .scrollerContent-WzeG7R {
+  margin-left: 10px
+}
+
+
+/* --- */
+/* Optionals End */
+/* ----- */
+
+/* BETTERDISCORD ADDITONS */
+.activity-11LB_k {
+  background-color: rgba(0, 0, 0, 0);
+}
+.scroller-305q3I {
+  border-radius: 12px;
+}
+.theme-dark .perksModal-fSYqOq {
+  background-color: var(--background-primary);
+}
+/* Bd Blue */
+.bd-button, .bd-server-tag, .bd-addon-views .bd-view-button.selected  {
+  background-color: var(--bd-color); 
+}
+.bd-button:hover {
+  background-color: var(--bd-color-hover); 
+}
+#bd-pub-button:hover {
+  background-color: var(--bd-color-hover); 
+}
+
+/*  ----------------------------------------------------
+         ANYTHING ELSE YOU WANT TO ADD GOES BELOW
+               THIS IS FOR DEBUGGING ETC
+                    v3.0 (Slook)
+    ----------------------------------------------------  */

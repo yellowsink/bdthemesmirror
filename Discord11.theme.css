@@ -1,0 +1,29 @@
+/**
+ * @name Discord 11
+ * @description Based in Windows 11 UI
+ * @author zuzumi#8097
+ * @authorId 403725623161257984
+ * @version 1
+ * @invite PsNtzGeHuW
+ * @donate https://www.paypal.me/hurtyoutube
+ * @website https:github.com/zuzumi-f
+ * @source https://github.com/zuzumi-f/Discord-11/blob/main/base.css
+*/
+
+/* Theme Import [DON'T TOUCH] */
+@import url(https://zuzumi-f.github.io/Discord-11/base.css);
+
+/* Colors *//* Change colors with Purple.css or Green.css ⬇️⬇️ */
+@import url(https://zuzumi-f.github.io/Discord-11/colors/Blue.css);
+
+/*--------------------------------------------------------------
+Message bubble styles [If you don't want any place a /* in both]
+---------------------------------------------------------------*/
+/* Default Message bubble */
+@import url(https://zuzumi-f.github.io/Discord-11/messagebubble11.css);
+/* New Message bubble *//*
+@import url(https://zuzumi-f.github.io/Discord-11/messagebubblenew.css);
+
+/*----------------------------------------------------
+                anything else down here
+------------------------------------------------------*/

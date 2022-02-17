@@ -1,0 +1,24 @@
+/**
+* @name Purpura
+* @author blueb
+* @authorId 403390454273409028
+* @version 2.8.1
+* @description A dark purple BetterDiscord theme, with a multi panel look and glow.
+* @source https://github.com/blueb442/purpura
+* @updateUrl https://github.com/blueb442/purpura/blob/main/purpura.theme.css
+*/
+
+/* Main Theme File, please do not remove */
+@import url(https://blueb442.github.io/purpura/assets/main/main.css);
+
+/* Image assets, still very important, please do not remove. */
+@import url(https://blueb442.github.io/purpura/assets/allinone-sprite.png);
+
+/* Commissioner font, Source Sans Pro and Fira Code font, please do not remove. */
+@import url(https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap);
+
+
+/* Discord Custom Covers, Optional */
+@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css%27');
