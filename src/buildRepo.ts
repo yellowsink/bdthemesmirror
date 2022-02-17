@@ -1,8 +1,7 @@
-import cfg from "../cfg.js";
-import fetch from "node-fetch";
-import repoManifestTemplate from "./repoManifestTemplate.js"
+import cfg from "../cfg.ts";
+import repoManifestTemplate from "./repoManifestTemplate.ts";
 
-import * as fs from "fs/promises";
+import { emptyDir } from "https://deno.land/std@0.126.0/fs/mod.ts";
 
 (async () => {
   const themes = await (await fetch(cfg.BD_THEMES_URL)).json();
@@ -28,12 +27,15 @@ import * as fs from "fs/promises";
   }
 
   const workingRepo = repoManifestTemplate;
-  await fs.mkdir("dist");
+  await emptyDir("dist");
   for (const [content, fileName] of parsedThemes) {
-    await fs.writeFile(`dist/${fileName}`, content);
+    await Deno.writeTextFile(`dist/${fileName}`, content);
 
     workingRepo.themes.push(`./${fileName}`);
   }
 
-  await fs.writeFile(`dist/${cfg.REPO_MANIFEST_NAME}`, JSON.stringify(workingRepo));
+  await Deno.writeTextFile(
+    `dist/${cfg.REPO_MANIFEST_NAME}`,
+    JSON.stringify(workingRepo)
+  );
 })();
