@@ -10,8 +10,10 @@ import { emptyDir } from "https://deno.land/std@0.126.0/fs/mod.ts";
 
   const parsedThemes: [string, string][] = [];
 
-  for (const theme of themes.slice(0, 3)) {
+  for (const theme of themes) {
     const id: number = theme.id;
+    console.log("Building theme with ID #" + id);
+    
     const req = await fetch(cfg.BD_DOWNLOAD_URL + id);
 
     if (req.status !== 200)
