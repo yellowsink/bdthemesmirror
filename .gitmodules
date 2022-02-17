@@ -1,6 +1,0 @@
-[submodule "submodules/ccplugs-scripts"]
-	path = submodules/ccplugs-scripts
-	url = https://github.com/CumcordPlugins/scripts
-[submodule "submodules/ysink-ccplugins"]
-	path = submodules/ysink-ccplugins
-	url = https://github.com/yellowsink/cc-plugins
