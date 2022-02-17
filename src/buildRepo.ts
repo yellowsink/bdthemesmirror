@@ -13,8 +13,21 @@ import { emptyDir } from "https://deno.land/std@0.126.0/fs/mod.ts";
   for (const theme of themes) {
     const id: number = theme.id;
     console.log("Building theme with ID #" + id);
-    
-    const req = await fetch(cfg.BD_DOWNLOAD_URL + id);
+
+    let req;
+    while (!req) {
+      try {
+        req = await fetch(cfg.BD_DOWNLOAD_URL + id);
+      } catch (error) {
+        if (
+          !(error instanceof TypeError) ||
+          !error.message.includes("redirects")
+        )
+          throw error;
+
+        console.warn("!!!! Max redirects error, retrying req")
+      }
+    }
 
     if (req.status !== 200)
       return console.log(req.status, req.headers, await req.text());
