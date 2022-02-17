@@ -1,0 +1,64 @@
+/**
+* @name Novum
+* @author Tomec & Saurian
+* @description Red galaxy theme enhanced with couple of addons and small features.
+* @version 5.5.5
+* @source https://github.com/przemec/Novum
+* @website https://przemec.github.io/Novum/
+*/
+
+/*
+CONTACT ME ON DISCORD IF YOU NEED ANY HELP WITH THEME (OR IF YOU SEE SOME GRAY/NOT-THEMED ELEMENTS): tomec#4771
+
+IMPORTANT: CHOOSE DARK THEME VERSION IN DISCORD APPEARANCE SETTINGS!
+IMPORTANT: SOME OF FEATURES ARE TESTED ONLY ON WINDOWS VERSION OF DISCORD!
+*/
+
+/*
+===================================================================
+*/
+
+@import url(https://przemec.github.io/Novum/theme.css);
+
+/*
+===================================================================
+*/
+
+/*
+CUSTOMIZABLE BACKGROUND IMAGE AND MAIN COLORS BELOW*
+
+*IF YOU WANT TO CUSTOMIZE THOSE COLORS, CHANGE root TO :root 
+*/
+
+root {
+  --app-background: url("https://przemec.github.io/Novum/assets/images/app.png"); /* main app background image [default: url("https://przemec.github.io/Novum/assets/images/app.png")] */
+  --main-color: #992727; /* main color (used mostly in buttons) [default: #992727] */
+  --main-color-selected: #aa2f2f; /* [default: #aa2f2f] */
+  --main-color-semitransparent: #d4393926; /* [default: #d4393926] */
+  --main-color-semitransparent-selected: #d336364d; /* [default: #d336364d] */
+  --accent-color: #fd9fa0; /* accent color (used in links, mentions etc.) [default: #fd9fa0] */
+  --accent-color-semitransparent: #fca7a918; /* [default: #fca7a918] */
+  --accent-saturated: #fd7a7c; /* [default: #fd7a7c] */
+  --accent-desaturated: #b47a7a; /* [default: #b47a7a] */
+  --button-text: #dddddd; /* [default: #dddddd] */
+  --button-text-selected: #ffffff; /* [default: #ffffff] */
+  --profile-background: url("https://przemec.github.io/Novum/assets/images/profile.png"); /* background of profile popout [default: url("https://przemec.github.io/Novum/assets/images/profile.png")] */
+  --profile-activity: #6d1515; /* color of activity field in profile left-click popout [default: #6d1515] */
+  --scroll-thumb-color: #a54b4b; /* color of scrollbars [default: #a54b4b] */
+}
+
+/*
+===================================================================
+*/
+
+/*
+Credits:
+- Original (not edited) background is taken (with the consent of author) and edited from 'Nova' theme made by https://github.com/din0s/
+- The idea of icons in Settings sidebar is taken from ClearVision theme originally designed by https://github.com/Zerthox
+- Most of custom icons come from Material Design Icons project: https://materialdesignicons.com/
+- The idea of animated activity in profile popout is taken from Comfy theme: https://github.com/NYRI4/Comfy
+
+Author of theme: https://github.com/tomec
+
+Special thanks for help to: https://github.com/net-runner
+*/
