@@ -10,7 +10,7 @@ if (!Array.isArray(themes)) {
   Deno.close(1);
 }
 
-const parsedThemes: [string, string][] = [];
+const parsedThemes: [string, string, string | undefined][] = [];
 
 for (const theme of themes) {
   const id: number = theme.id;
@@ -39,12 +39,25 @@ for (const theme of themes) {
   const fileNameSplit = fullFileName.split("/");
   const fileName = fileNameSplit[fileNameSplit.length - 1];
 
-  parsedThemes.push([content, fileName]);
+  parsedThemes.push([content, fileName, theme.thumbnail_url]);
 }
 
 const workingRepo = repoManifestTemplate;
 await emptyDir("dist");
-for (const [content, fileName] of parsedThemes) {
+for (let [content, fileName, thumbUrl] of parsedThemes) {
+  if (thumbUrl) {
+    const resolvedThumbUrl = cfg.THUMBS_ROOT_URL + thumbUrl;
+    const nameIndex = content.indexOf("* @name");
+
+    // i hope to god that bd doesnt need indentation to be correct
+    content =
+      content.slice(0, nameIndex) +
+      "* @media " +
+      resolvedThumbUrl +
+      "\n" +
+      content.slice(nameIndex);
+  }
+
   await Deno.writeTextFile(`dist/${fileName}`, content);
 
   workingRepo.themes.push(`./${fileName}`);
