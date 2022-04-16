@@ -1,5 +1,6 @@
 /**
- * @name Material_Discord
+ * @media https://betterdiscord.app/resources/thumbnails/213.png
+* @name Material_Discord
  * @version 3.0.4
  * @description A theme based on Google's Material Design
  * @author CapnKitten
@@ -22,8 +23,8 @@
 	--avatar-radius: 50%; /*	-	*/
 
 	--message-radius: 19px;
-	--message-padding: 8px 12px;
-	--message-padding-alt: 4px 12px 8px 12px; /*	-	*/
+	--message-padding-top: 8px;
+	--message-padding-side: 12px; /*	-	*/
 
 	--media-radius: 19px; /*	-	*/
 
@@ -32,4 +33,14 @@
 
 	--popout-radius: 5px;
 	--popout-radius-big: 10px;
+}
+
+.theme-dark {
+	--saturation-modifier: 0.175;
+	--lightness-modifier: 0.2;
+}
+
+.theme-light {
+	--saturation-modifier: 0.4;
+	--lightness-modifier: 2.175;
 }
