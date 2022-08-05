@@ -4,9 +4,9 @@
   *	@version 1.0
   *	@description Highly customized and customizable theme for Discord
   * @authorId 468132563714703390
-  * @authorLink https://dsc.bio/devevil
+  * @authorLink https://devevil.com
   * @source https://github.com/DevEvil99/Ocean-Discord-Theme
-  * @website https://devevil.xyz
+  * @website https://devevil.com
   * @invite jsQ9UP7kCA
 */
 
@@ -37,6 +37,13 @@
   --ocean-color1: #00d5ce;
   --ocean-color2: #0a173a;
   --ocean-color3: #1487b1;
+  --watermark-filter-invert: 0%;
+  --watermark-filter-sepia: 50%;
+  --watermark-filter-saturate: 3000%;
+  --watermark-filter-hue-rotate: 150deg;
+  --watermark-filter-brightness: 100%;
+  --watermark-filter-contrast: 200%;
+  --ocean-emoji-picker-color: 150deg;
 }
 * @media https://betterdiscord.app/resources/thumbnails/813.png
 

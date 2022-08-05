@@ -1,30 +1,30 @@
 /**
  * @media https://betterdiscord.app/resources/thumbnails/877.png
 * @name piOS Forever
- * @author Saltssaumure#7557
- * @description SUPERHOT piOS inspired theme. Now automatically updates, forever!
- * @version Autoupdate
+ * @author Saltssaumure
+ * @authorLink https://github.com/Saltssaumure
+ * @description SUPERHOT piOS inspired theme. With customisable colours, glow intensity, support for both cosy and compact mode.
+ * @version Autoupdate5
+ * @invite uy8nKQVatp
  * @source https://github.com/Saltssaumure/pios-discord-theme
- * @website https://discord.gg/9eAwJF8
+ * @donate https://ko-fi.com/saltssaumure
 */
 
 /*
                                                 Made by:
- _______  _______  _    _________ _______  _______  _______           __   __           _______  _______ 
+ _______  _______  _    _________ _______  _______  _______           __   __           _______  _______
 (  ____ \(  ___  )( \   \__   __/(  ____ \(  ____ \(  ___  )|\     /|(  \ /  )|\     /|(  ____ )(  ____ \
 | (____\/| (___) || |      | |   | (____\/| (____\/| (___) || |   | || || || || |   | || (____)|| (__  \/
-(_____  )|  ___  || |      | |   (_____  )(_____  )|  ___  || |   | || |(_)| || |   | || __  __)|  __)   
+(_____  )|  ___  || |      | |   (_____  )(_____  )|  ___  || |   | || |(_)| || |   | || __  __)|  __)
 /\____) || )   ( || (____/\| |   /\____) |/\____) || )   ( || (___) || )   ( || (___) || ) \ \__| (____/\
 \_______)|/     \|(_______/)_(   \_______)\_______)|/     \|(_______)|/     \|(_______)|/   \__/(_______/
-                                              donut steel!
-											  
+                                         Licensed under GPL-3.0!
+
 Discord: Saltssaumure#7557
-Twitter: @Saltssaumure
-Github: https://github.com/Saltssaumure/pios-discord-theme
+GitHub: https://github.com/Saltssaumure/pios-discord-theme
 
-Current version: Forever (Autoupdates from Github!)
-
-Join the Official Superhot Discord! https://discord.gg/9eAwJF8
+Join the SUPERHOT Official server! https://discord.gg/9eAwJF8
+Join Salts' Discord Themes server! https://discord.gg/uy8nKQVatp
 
 */
 
@@ -32,6 +32,11 @@ Join the Official Superhot Discord! https://discord.gg/9eAwJF8
 
 :root
 {
-	--compact-message-spacing: 1; 	/* Space between messages in compact mode, ie. box mode. Default: 1 (100%) */
-	--accent-color: 0; 				/* Colour accent. Range: 0-360, default: 0 (red) */
+    --glow-intensity: 1;            /* Intensity of text glow. Range: 0-1, default: 1 (100%) */
+    --compact-message-spacing: 1;   /* Space between messages in compact mode. Range: 0-∞, default: 1 (100%) */
+    --accent-color: 0;              /* Colour accent hue value as in HSL. Range: 0-360, default: 0 (red) */
+    --crt-overlay: block;           /* CRT monitor overlay. Values: block (on) or none (off) */
+    /* The following effects are performance-heavy. */
+    --crt-scanline: block;          /* CRT animated scanline. Values: block (on) or none (off) */
+    --crt-flicker: none;            /* CRT monitor overlay flickering. Values: flicker (on) or none (off) */
 }

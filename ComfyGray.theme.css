@@ -1,0 +1,44 @@
+/**
+* @media https://betterdiscord.app/resources/thumbnails/1047.png
+* @name ComfyGray
+* @version 1.0
+* @author carrot#8812
+* @description A theme with a nice shade of gray everywhere! Its super comfy.
+* @source https://github.com/ObjectiveSlayer/ComfyGray
+* @invite not-set
+*/
+
+/* MAIN CSS STYLESHEET... DO NOT REMOVE THIS!! */
+@import url(https://objectiveslayer.github.io/ComfyGray/ComfyGray.css);
+
+
+
+
+/* all the addon imports(YOU CAN REMOVE ANY OF THEM IF YOU DONT LIKE THEM) */
+
+
+/* icon change import by Obscure.#4719 */
+@import url(https://objectiveslayer.github.io/ComfyGray/addons/icon-replace.css);
+
+/* radial status by Gibbu#1211 */
+@import url(https://objectiveslayer.github.io/ComfyGray/addons/radial-status.css);
+
+/* server rings */
+@import url(https://objectiveslayer.github.io/ComfyGray/addons/server-rings.css);
+
+/* home icon */
+@import url(https://objectiveslayer.github.io/ComfyGray/addons/homeicon.css);
+
+/* border roles(makes the text and border the same color as the role color) */
+@import url(https://objectiveslayer.github.io/ComfyGray/addons/roles.css);
+
+/* floating server list, Remove the comment if you want it
+@import url(https://objectiveslayer.github.io/ComfyGray/addons/floating%20guild%20list.css);
+/*
+
+/* add import links below this */
+
+
+
+
+/* add custom css below this */

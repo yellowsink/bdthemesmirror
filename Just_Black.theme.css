@@ -1,7 +1,7 @@
 /**
  * @media https://betterdiscord.app/resources/thumbnails/662.png
 * @name Just_Black
- * @version 4.2.1
+ * @version 4.3.0
  * @author Ме́филес#9198
  * @authorId 376086802961793024
  * @description Revival of JustBlack Theme by Dddsasul: "A nice and black theme"
@@ -10,16 +10,16 @@
 */
 @import url("https://Mephiles-the-Dark.github.io/Better_Discord/Themes/Just_Black/Just_Black.css");
 :root {
-	--Dark: black; /* A colour (default: black) */
-	--Light: white; /* A colour (default: white) */
-	--Just_Black_Accent1: 91, 187, 255; /* An RGB triplet (default: 91, 187, 255) */
-	--Just_Black_Accent2: 41, 137, 216; /* An RGB triplet (default: 41, 137, 216) */
-	--Just_White_Accent1: 164, 68, 0; /* An RGB triplet (default: 164, 68, 0) */
-	--Just_White_Accent2: 214, 118, 39; /* An RGB triplet (default: 214, 118, 39) */
-	--Blue: blue; /* An extra accent colour for Dark Theme (default: blue) */
-	--Orange: orangered; /* An extra accent colour for Light Theme (default: orangered) */
-	--Fuchsia: fuchsia; /* A colour (default: fuchsia) */
-	--Active: rgb(51, 153, 51); /* A colour for clicking (default: rgb(51, 153, 51)) */
+	--Dark: 0, calc(var(--saturation-factor, 1)*0%), 0%; /* An HSL triplet for dark theme background (default: 0, calc(var(--saturation-factor, 1)*0%), 0%) */
+	--Light: 0, calc(var(--saturation-factor, 1)*0%), 100%; /* An HSL triplet for light theme background (default: 0, calc(var(--saturation-factor, 1)*0%), 100%) */
+	--Just_Black_Accent1: 204.9, calc(var(--saturation-factor, 1)*100%), 67.8%; /* An HSL triplet (default: 204.9, calc(var(--saturation-factor, 1)*100%), 67.8%) */
+	--Just_Black_Accent2: 207.1, calc(var(--saturation-factor, 1)*69.2%), 50.4%; /* An HSL triplet (default: 207.1, calc(var(--saturation-factor, 1)*69.2%), 50.4%) */
+	--Just_White_Accent1: 24.9, calc(var(--saturation-factor, 1)*100%), 32.2%; /* An HSL triplet (default: 24.9, calc(var(--saturation-factor, 1)*100%), 32.2%) */
+	--Just_White_Accent2: 27.1, calc(var(--saturation-factor, 1)*69.2%), 49.6%; /* An HSL triplet (default: 27.1, calc(var(--saturation-factor, 1)*69.2%), 49.6%) */
+	--Blue: 240, calc(var(--saturation-factor, 1)*100%), 50%; /* An extra HSL triplet for Dark Theme (default: 240, calc(var(--saturation-factor, 1)*100%), 50%) */
+	--Orange: 16.2, calc(var(--saturation-factor, 1)*100%), 50%; /* An extra HSL for Light Theme (default: 16.2, calc(var(--saturation-factor, 1)*100%), 50%) */
+	--Fuchsia: 300, calc(var(--saturation-factor, 1)*100%), 50%; /* An HSL triplet (default: 300, calc(var(--saturation-factor, 1)*100%), 50%) */
+	--Active: 120, calc(var(--saturation-factor, 1)*50%), 40%; /* An HSL triplet for clicking (default: 120, calc(var(--saturation-factor, 1)*50%), 40%) */
 	--Blank: 0.7; /* An opacity for not hovered, 0 for hiding, 1 for showing (default: 0.7) */
 }
 /* One may post code snippets below this line */
