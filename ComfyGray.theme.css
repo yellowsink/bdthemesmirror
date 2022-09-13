@@ -32,6 +32,10 @@
 /* border roles(makes the text and border the same color as the role color) */
 @import url(https://objectiveslayer.github.io/ComfyGray/addons/roles.css);
 
+/* USER CONTROLS AREA.... DONT REMOVE UNLESS YOU DONT LIKE THE WAY IT LOOKS. */
+@import url(https://objectiveslayer.github.io/ComfyGray/addons/user-controls.css);
+
+
 /* floating server list, Remove the comment if you want it
 @import url(https://objectiveslayer.github.io/ComfyGray/addons/floating%20guild%20list.css);
 /*
