@@ -79,6 +79,11 @@
   --offline: #747f8d;
   --streaming: #a068ff;
 
+  /*settings*/
+  --back-seeting-account-cards: rgba(43, 43, 43, 0.75);
+  --back-seeting-account-cards-buttons: rgba(78, 78, 78, 0.5);
+  --back-seeting-account-cards-buttons-hover: rgba(78, 78, 78, 0.25);
+
   /*discords integrated colors*/
   --interactive-normal: white;
   --interactive-active: white;
@@ -140,6 +145,7 @@
   --big-user-popout-avatar: black;
   --user-popout: black;
   --user-popout-alt: rgba(0, 0, 255, 0.24);
+  --back-small-user-popout-badges: rgba(0, 0, 0, 0.75);
 
   /*plugin popups*/
   --back-color-tooltips: black;
@@ -170,7 +176,7 @@
   --linkpreview-background: transparent;
 
   /*Version*/
-  --version-1-1-5: none;
+  --version-1-1-7: none;
   
   /*other*/
   --backdrop: hsl(0, 0%, 0%, 0.6);

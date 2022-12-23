@@ -1,0 +1,100 @@
+/**
+ * @media https://betterdiscord.app/resources/thumbnails/1119.png
+* @name Soon
+ * @author Satana
+ * @version 1.1.1
+ * @description A smooth, modifiable theme for simple-minded people
+ * @website https://satana.design
+ * @source https://github.com/SatanaDesigns/soon
+ * @invite udUC7682Un
+ */ 
+
+ /*
+Do NOT modify this file if you dont know what youre doing.
+ */
+
+ /** CUSTOMIZATION
+  * If you wanna use the regular Discord Emojis, delete lines 34
+  * If you wanna change any (nonmain) colors or modify things go to lines 32-79
+  * Theme skins are not out yet
+  * If you wanna make a skin for the theme (palette) join our discord server
+  * If you need extra support, join our discord server
+ */
+
+
+/**
+ * Main Source File 
+ * DON'T REMOVE!
+*/
+@import url("https://satanadesigns.github.io/soon/main/soon.css");
+@import url("https://satanadesigns.github.io/soon/main/extra/palette.css");
+
+
+/**
+ * Delete this @import if you want the regular discord icons (Docs coming soon (maybe))
+*/
+@import url("https://satanadesigns.github.io/external-files/iconChange.css");
+
+
+/** 
+ * Replaces Emojis
+ * Delete this @import if you want the regular discord emojis (Docs coming soon (maybe))
+*/
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
+
+:root {
+  /* Banners (modifiable!) */
+  --banner-blur: 1; /* 1 to enabled || 0 to disable */
+  --banner-blur-amount: 3;
+  
+  /* Fonts (modifiable!) */
+  --font-primary: Inter;
+  --font-display: Poppins;
+  --codeblock-font: Fira Code;
+
+  /* Avatar Image Shape (modifiable!) (change all of the numbers to modify shape) */
+    --rs-avatar-shape: 10%; /* 50% for round - 10% for default */
+    --avatar-radius: 10px; /* default: 10px */
+    --reply-avatar-radius:5px; /* default: 5px */
+
+  /* Server Image Shape (modifiable!) (change all of the numbers to modify shape) */
+    --server-radius:3px; /* default: 3px */
+    --folder-radius:5px; /* default: 5px */
+
+  /* Radial Status (modifiable!) */
+  --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+  --rs-online-color: #43b581; /* Colour for online status */
+  --rs-idle-color: #faa61a; /* Colour for idle status */
+  --rs-dnd-color: #f04747; /* Colour for dnd status */
+  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-streaming-color: #643da7; /* Colour for streaming status */
+  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+  --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+  
+  /* Chat Bubbles (modifiable!) */
+      --chat-bubble: 1; /* 1 to enable chat bubbles, 0 to disable chat bubbles */
+
+    --chat-bubble-background-color: #1f1d27a1; /* Background Color of chat bubbles | #1f1d27a1 */
+    --chat-bubble-border-color: none; /* Chat bubble border | [color] to enable - none to disable */
+    --chat-bubble-code-background-color: var(--background-secondary-alt); /* Chat bubble background color for Code Messages | var(--background-secondary-alt) */
+
+    --chat-bubble-max-width: 90%; /* Max width for chat bubble */
+    --chat-bubble-border-radius: 5px; /* Roundness of chat bubble */
+    /* Chat bubble shadows */
+    --chat-bubble-box-shadow-h-offset: 0;
+    --chat-bubble-box-shadow-v-offset: 0;
+    --chat-bubble-box-shadow-blur: 0;
+    --chat-bubble-box-shadow-color-h: 0;
+    --chat-bubble-box-shadow-color-s: 0%;
+    --chat-bubble-box-shadow-color-l: 0%;
+    --chat-bubble-box-shadow-color-a: 0;
+
+    /* User Panel Position (top/bottom) */
+    --userpanel-position: 0; /* -1 to move it to the top, 0 for bottom */
+}

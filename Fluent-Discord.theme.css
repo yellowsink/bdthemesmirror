@@ -2,7 +2,7 @@
  * @media https://betterdiscord.app/resources/thumbnails/959.png
 * @name Fluent Discord
  * @author TakosThings
- * @version 1.3.0
+ * @version 1.5.6
  * @description Fluent theme for Discord
  * @invite ZYrCacRuez
  * @source https://github.com/TakosThings/Fluent-Discord
@@ -30,10 +30,10 @@
   --fluent-acrylic-background: url(https://cdn.discordapp.com/attachments/862716886067445820/887579790289297408/Captured_Motion_27.jpg);
   --fluent-acrylic-background-blur: 24px;
   --fluent-acrylic-background-dimness: 75%;
+  --fluent-acrylic-background-saturate: 140%;
   --fluent-guilds-icon-size: 24px;
-  --fluent-chatbox-activity-button-visibility: block;
 }
 
 /**
  * End user options
-*/ 
+*/
