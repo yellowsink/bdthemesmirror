@@ -2,7 +2,7 @@
  * @name         Alan Walker Theme
  * @description  dark theme with Alan Walker's logo as background, credit to DevilBro#4401 for settingsicons, credit to Nyria#3863 for userbuttons in the serverbar and spotifyControls
  * @author       lolpowerluke
- * @version      1.1.5
+ * @version      1.1.9
  * @source       https://github.com/lolpowerluke/discordtheme/blob/main/alanWalker.theme.css
  * @website      https://github.com/lolpowerluke
  * @invite       GwjrQVDNJ2
@@ -131,6 +131,10 @@
   --typing-border: rgb(122, 122, 122);
   --border-zoom: rgb(121, 121, 121);
   --back-activity-panels: rgb(39, 39, 39);
+  --back-gradient-opacity: .9;
+  --back-gradient-top: 0, 0, 0;
+  --back-gradient-bottom: 40, 40, 40;
+  --profile-gradient-button-color: black;
 
   /*menu*/
   --menu-item-hover-color: rgb(170, 170, 170);
@@ -176,7 +180,7 @@
   --linkpreview-background: transparent;
 
   /*Version*/
-  --version-1-1-7: none;
+  --version-1-1-9: none;
   
   /*other*/
   --backdrop: hsl(0, 0%, 0%, 0.6);
