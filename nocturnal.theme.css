@@ -1,13 +1,14 @@
 /**
 * @media https://betterdiscord.app/resources/thumbnails/471.png
 * @name Nocturnal
-* @author Spectra#4577
+* @version 3.0.1
 * @description For when default discord just isn't dark enough, a theme for those who live a night
+* @author Spectra
 * @invite PZdnCVD
-* @version 3.0.0
+* @source https://github.com/xcruxiex/themes
 * @website https://betterdiscord.app/theme/Nocturnal
 */
-@import url("https://codedotspectra.github.io/themes/themes-cores/nocturnal.css");
+@import url("https://xcruxiex.github.io/themes/themes-cores/nocturnal.css");
 /*
                                                                                                                                                                      
                                                                                                                                                                      
@@ -30,11 +31,8 @@ NNNNNNNN         NNNNNNN   ooooooooooo       cccccccccccccccc          ttttttttt
                                                                                                                                                                      
                                                                                                                                                                      
 */
-@import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
-@import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
-@import url("https://codedotspectra.github.io/themes/core/badges.css");
-
-@import url("https://codedotspectra.github.io/themes/core/hljs.css"); /* Better Hljs */
+@import url("https://xcruxiex.github.io/themes/core/badges.css");
+@import url("https://xcruxiex.github.io/themes/core/custom-font.css");
 @import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css"); /* Radial Status */
 :root {
   --backgroundColor01: #1e2731;
@@ -60,4 +58,6 @@ NNNNNNNN         NNNNNNN   ooooooooooo       cccccccccccccccc          ttttttttt
   --rs-invisible-color: #747f8d;
   --rs-phone-visible: block;
   --rs-phone-color: var(--rs-online-color);
+
+  --customFont: 'gg sans', sans-serif;
 }
