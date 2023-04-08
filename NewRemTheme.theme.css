@@ -3,7 +3,7 @@
 * @name New Rem Theme
  * @author ShadowDevilsAvenged
  * @description Newer Rem theme for my return
- * @version 4.4
+ * @version 4.8
  */
 
  .app-2CXKsg {
@@ -12,9 +12,7 @@
     background-color: transparent;
 }
 
-.theme-dark .perksModal-CLcR1c {
-    background-color: transparent;
-}
+
 
 .theme-dark .uploadModal-2ie9O_ {
     background-color: transparent;
@@ -180,23 +178,23 @@
     background-color: rgba(118, 171, 217, .70);
 }
 
-.theme-dark .dim-2Uxgxb span {
+.theme-dark .dim-GXxpGm span {
     background-color: #61a5d8;
     color: white;
 }
 
-.theme-dark .keybindShortcut-3zF1P9 span {
+.theme-dark .combo-3PNrpQ span {
     color: white;
     box-shadow: none;
 }
 
-.keybindShortcut-3zF1P9 span {
+.combo-3PNrpQ span {
     background-color: #61a5d8;
     border: 1px solid #76AAD9;
     border-radius: 6px;
 }
 
-.theme-dark .keybindShortcut-3zF1P9 {
+.theme-dark .combo-3PNrpQ {
     color: white;
 }
 
@@ -204,13 +202,13 @@
     text-transform: capitalize;
 }
 
-.theme-dark .keybindShortcut-3zF1P9 span:active {
+.theme-dark .combo-3PNrpQ span:active {
     color: white;
     box-shadow: none;
     border: 2px outset #76AAD9;
 }
 
-.theme-dark .dim-2Uxgxb span:active {
+.theme-dark .dim-GXxpGm span:active {
     color: white;
 }
 
@@ -231,9 +229,18 @@
     border-color: transparent;
 }
 
+.option-Uc12mm[aria-selected=true]:not(.option-Uc12mm.multi-2vPqc4) {
+    color: white !important;
+    background-color: black !important;
+}
+
 .theme-dark .calendarPicker-sDhzdi .react-datepicker__current-month {
     border-bottom-color: transparent;
     color: white;
+}
+
+.divider-3nqZNm {
+    border: none;
 }
 
 .calendarPicker-sDhzdi .react-datepicker__current-month {
@@ -372,12 +379,12 @@
     opacity: 1;
 }
 
-.side-1lrxIh .themed-qqoYp3.item-2GWPIy:hover:not(.disabled-2G98Nl), .topPill-3DJJNV .themed-qqoYp3.item-2GWPIy:hover:not(.disabled-2G98Nl) {
+.side-1lrxIh .themed-qqoYp3.item-2GWPIy:hover:not(.disabled-2G98Nl), .topPill-2vcLsa .themed-qqoYp3.item-2GWPIy:hover:not(.disabled-2G98Nl) {
     background-color: #76aad9;
     border: 2px outset #76aad9;
 }
 
-.side-1lrxIh .themed-qqoYp3.selected-1sf9UK.item-2GWPIy, .topPill-3DJJNV .themed-qqoYp3.selected-1sf9UK.item-2GWPIy {
+.side-1lrxIh .themed-qqoYp3.selected-1sf9UK.item-2GWPIy, .topPill-2vcLsa .themed-qqoYp3.selected-1sf9UK.item-2GWPIy {
     background-color: #61a5d8 !important;
     border: 2px inset #61a5d8 !important;
 } 
@@ -535,12 +542,12 @@
     color: white;
 }
 
-.lookFilled-yCfaCM.colorBrand-I6CyqQ {
+.lookFilled-1H2Jvj.colorBrand-2M3O3N {
     background-color: rgba(74, 94, 221, .66);
     transition: background-color .6s;
 }
 
-.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover {
+.lookFilled-1H2Jvj.colorBrand-2M3O3N:hover {
     background-color: rgba(31, 61, 255, .89);
 }
 
@@ -696,7 +703,7 @@
     background: rgba(0,0,0,.25);
 }
 
-.iconWrapper-3plkqh {
+.iconWrapper-1CGrJp {
     border-radius: 5px;
     background-color: rgba(97, 164, 216, .72);
     box-shadow: rgba(97, 165, 216, .8) 2px 2px 2px 0px, rgba(97, 165, 216, .8) 2px 2px 2px 0px;
@@ -1068,7 +1075,7 @@
     background-color: #61A5D8 !important;
 }
 
-.progressBar-1T6LYX[style*="background-color: var(--brand-500);"] {
+.progressBar-1T6LYX[style*="background-color: rgb(88, 101, 242);"] {
     background-color: #76AAD9 !important;
 }
 
@@ -1086,16 +1093,16 @@
     box-shadow: none;
 }
 
-.lookFilled-yCfaCM.colorRed-rQXKgM {
+.lookFilled-1H2Jvj.colorRed-2VFhM4 {
     background-color: rgba(176, 33, 33, .62);
 }
 
-.lookFilled-yCfaCM.colorRed-rQXKgM:hover {
+.lookFilled-1H2Jvj.colorRed-2VFhM4:hover {
     background-color: #B02121;
     border: 2px outset #B02121;
 }
 
-.lookFilled-yCfaCM.colorRed-rQXKgM:active {
+.lookFilled-1H2Jvj.colorRed-2VFhM4:active {
     background-color: #B02121;
     border: 2px inset #B02121;
 }
@@ -1275,17 +1282,17 @@
     background: rgba(97, 164, 216, .35);
 }
 
-.lookFilled-yCfaCM.colorGreen-3y-Z79 {
+.lookFilled-1H2Jvj.colorGreen-jIPCAS {
     background-color: #00AD89 !important;
     opacity: .8;
     transition: opacity .2s ease-in;
 }
 
-.lookFilled-yCfaCM.colorGreen-3y-Z79:hover {
+.lookFilled-1H2Jvj.colorGreen-jIPCAS:hover {
     opacity: 1;
 }
 
-.lookFilled-yCfaCM.colorGreen-3y-Z79:disabled {
+.lookFilled-1H2Jvj.colorGreen-jIPCAS:disabled {
     background-color: #00AD89;
 }
 
@@ -1588,11 +1595,11 @@
     background-color: transparent;
 }
 
-.top-K_jibn .brand-2EKq3J.item-2GWPIy:active, .top-K_jibn .brand-2EKq3J.selected-1sf9UK.item-2GWPIy {
+.top-Ktfr_T .brand-2EKq3J.item-2GWPIy:active, .top-Ktfr_T .brand-2EKq3J.selected-1sf9UK.item-2GWPIy {
     border-bottom-color: #61A5D8 !important;
 }
 
-.top-K_jibn .brand-2EKq3J.item-2GWPIy:hover {
+.top-Ktfr_T .brand-2EKq3J.item-2GWPIy:hover {
     border-bottom-color: #76AAD9;
 }
 
@@ -1775,7 +1782,7 @@
     mask: none;
 }
 
-.avatarSpeaking-33RRJU {
+.avatarSpeaking-36V2PN {
     box-shadow: inset 0 0 0 3px #61A5D8,inset 0 0 0 3px black;
     border-radius: 4px;
 }
@@ -2845,8 +2852,8 @@
   fill: black;
 }
 
-#app-mount .avatarWrapper-3y0KZ1 .wrapper-3Un6-K foreignObject[mask*=mobile] ~ .pointerEvents-9SZWKj,
-#app-mount .avatar-1YsFQ1.wrapper-3Un6-K foreignObject[mask*=mobile] ~ .pointerEvents-9SZWKj {
+#app-mount .avatarWrapper-3y0KZ1 .wrapper-3Un6-K foreignObject[mask*=mobile] ~ .pointerEvents-2KjWnj,
+#app-mount .avatar-1YsFQ1.wrapper-3Un6-K foreignObject[mask*=mobile] ~ .pointerEvents-2KjWnj {
   mask: url("#svg-mask-status-online-mobile");
   fill: #3BA53B !important;
 }
@@ -2978,7 +2985,7 @@
     background-color: rgba(0, 0, 0, .4);
 }
 
-.pinIcon-zVODC5,
+.pinIcon-3I5-gm,
 .tagsButton-4pwOKH {
     background-color: #61A5D8;
 }
@@ -3188,24 +3195,7 @@
 
 .theme-dark .inviteSettingsInviteRow-FAjfDN {
     box-shadow: none;
-}
-
-
-.theme-dark .perk-19D_HN {
-    background-color: rgba(0,0,0,.4);
-}
-
-.divider-1MSaR9 {
-    background: none;
-}
-
-.theme-dark .barBackground-unEPDT {
-    background-color: transparent;
-}
-
-.barSecondary-VouwoY {
-    background-color: rgba(255,255,255,.12);
-}
+} 
 
 .theme-dark .elevationBorderLow-3_3rXL {
     box-shadow: none;
@@ -3289,11 +3279,6 @@
     color: white;
 }
 
-.theme-dark .tierBody-3ju-rc {
-    background-color: transparent;
-    color: white;
-}
-
 .featureIcon-2sTnDK {
     background-color: rgba(255,255,255,.12);
     border-radius: 7px;
@@ -3301,14 +3286,6 @@
 
 .stickyHeaderElevated-dNSSrJ {
     box-shadow: none;
-}
-
-.ctaBar-Nhk8yY {
-    background-color: rgba(0,0,0,.6);
-}
-
-.theme-dark .tierMarkerBackground-G8FoN4 {
-    background-color: transparent;
 }
 
 .topic-11NuQZ {
@@ -3486,12 +3463,12 @@
     background-color: rgba(0, 0, 0, .09);
 }
 
-.top-K_jibn .selected-1sf9UK.themed-qqoYp3.item-2GWPIy, 
-.top-K_jibn .themed-qqoYp3.item-2GWPIy:active {
+.top-Ktfr_T .selected-1sf9UK.themed-qqoYp3.item-2GWPIy, 
+.top-Ktfr_T .themed-qqoYp3.item-2GWPIy:active {
     border-bottom-color: #EAD2C6;
 }
 
-.top-K_jibn .themed-qqoYp3.item-2GWPIy:hover {
+.top-Ktfr_T .themed-qqoYp3.item-2GWPIy:hover {
     border-bottom-color: silver;
 }
 
@@ -3578,29 +3555,6 @@
 
 .selectPlanDivider-1j8LTI {
     background-color: transparent;
-}
-
-.badgeIconWithSubscribers-2WYJsQ,
-.theme-dark .tierMarkerInProgress-2Tdxjz .currentTierIcon-2rq-bv.tier3Icon-959FdD,
-.theme-dark .icon-3dkE_X,
-.tierMarkerLabelPlusIcon-2zLkr7 {
-    color: #FF2EB9;
-}
-
-.tierMarkerInProgress-2Tdxjz[style*="background:"] {
-    background: #21252B !important;
-}
-
-.tierMarkerAccomplished-1SkbEJ[style*="background:"] {
-    background: #FF2EB9 !important;
-}
-
-.barForeground-2kwBa_ {
-    background-color: #FF2EB9;
-}
-
-.tierMarkerLabelText-1wk8KK:not(.isAccomplished-2NcqRT):hover {
-    background-color: rgba(255, 46, 185, .3);
 }
 
 .premiumIcon-3qxLdX {
@@ -3875,10 +3829,10 @@
     background-color: rgba(0, 0, 0, .3);
 }
 
-.theme-dark .tierHeaderLocked-3ItHYn {
-    background-color: rgba(0, 0, 0, .4);
-    color: rgba(255, 255, 255, .4);
-}
+
+     
+     
+ 
 
 .theme-dark .content-3nJg0c:before {
     background-color: transparent;
@@ -4135,6 +4089,23 @@
 
 .resizeHandle-PBRzPC {
     background: none;
+}
+
+.footer-IubaaS {
+    background-color: transparent;
+}
+
+.modalHeader-1hF3w-,
+.modalBody-3-seO3 {
+    background-color: transparent;
+}
+
+.modalFooter-Ywt9Jo {
+    background-color: transparent!important;
+}
+
+.bd-sidebar-header h2 {
+    color: white;
 }
 /* Main Color */
 .main-color {color: #61A5D8;}
