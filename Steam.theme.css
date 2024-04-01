@@ -1,0 +1,23 @@
+/**
+ * @media https://betterdiscord.app/resources/thumbnails/1352.png
+* @name Steam
+ * @author maenDisease
+ * @authorLink https://maendisease.github.io/
+ * @version 1.0.0
+ * @description Steam UI on Discord.
+ * @source https://github.com/maenDisease/Steam
+ * @website https://maendisease.github.io/
+ * @invite BShu37e4jg
+*/
+
+@import url('https://maendisease.github.io/Steam/Steam.css');
+
+@import url(https://maendisease.github.io/Steam/addons/horizontalserverlist.css);
+:root {
+  --hue-shift: 0; /* 0-360 */
+  --content-width: 940px; /* 100% = Full Width */
+  --message-width: 640px;
+  --server-size: 28px;
+  --custom-font: "gg sans";
+  --custom-font-code: monospace;
+}

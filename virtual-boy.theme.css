@@ -1,0 +1,24 @@
+/**
+ * @media https://betterdiscord.app/resources/thumbnails/1321.gif
+* @name Virtual Boy
+ * @author Riddim_Glitch
+ * @version 1.5
+ * @description A theme based on a failed Nintendo console with the same name.
+ * @source https://github.com/Nexus-Themes/Virtual-Boy
+ * @invite aYxpgkvdvR
+ * @authorId 801089753038061669
+*/
+
+@import url('https://Nexus-Themes.github.io/Virtual-Boy/virtual-boy.css');
+
+/* Comment out this line to disable message boxes */
+@import url("https://riddim-glitch.github.io/Virtual-Boy/MessageBoxes.css");
+/* Uncomment this line to use Right Alinged Selfmessages. Requires my helper plugin! Refer to the github repo for more information. */
+/* @import url("https://Riddim-GLiTCH.github.io/Virtual-Boy/selfmessages.css"); */
+:root {
+  /* Don't like the colors? Change these HSL variables! */
+  --VBaccent: 0 100% 50%;
+  --VBaccent-muted: 0 100% 39.2%;
+  --VBaccent-dimmest: 0 100% 17.6%;
+  --text-shadow-size: 1px; /*Default: 1px*/
+}

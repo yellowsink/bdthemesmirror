@@ -1,12 +1,11 @@
 /**
     * @media https://betterdiscord.app/resources/thumbnails/537.png
 * @name Vibrant Glass
-    * @version 1.0
+    * @version 1.1
     * @description Simple customizable glass theme.
     * @author Kaynooo#8080
     *
     * @source https://github.com/Kayno0o/vibrant-glass-theme
-    * @invite XhPKd5x7Fz
 **/
 
 /*
@@ -27,7 +26,6 @@ to create custom gradient : https://cssgradient.io/ and copy the linear-gradient
 */
 
 /* DEFINE MAIN VARIABLES */
-
 .theme-dark {
     /*
     name of the Discord window (top left)
@@ -60,8 +58,7 @@ to create custom gradient : https://cssgradient.io/ and copy the linear-gradient
 }
 
 /* BACKGROUND */
-
-.app-2rEoOp>.bg-h5JY_x {
+.bg__7adbf {
     background: var(--background-url) !important;
     background-size: cover !important;
 }

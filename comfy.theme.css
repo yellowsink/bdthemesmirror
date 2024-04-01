@@ -4,7 +4,7 @@
 * @author Nyria#3863
 * @description Stay comfy while talking to your friends
 * @invite rtBQX5D3bD
-* @version 2.3
+* @version 2.4
 * @donate https://ko-fi.com/nyria
 */
 
@@ -23,8 +23,11 @@
 /* ═══════『 🚫 ・ No scrollbars 』- Comment the line below if you want the scrollbar back */
 @import "https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css";
 
-/* ═══════『 🎵 ・ Better SpotifyControls seek bar 』- Comment the line below if you want the scrollbar back */
+/* ═══════『 🎵 ・ Better SpotifyControls seek bar 』- Comment the line below if you don't want this spotify bar */
 @import "https://comfy-themes.github.io/Discord/betterdiscord/better-spotify.css";
+
+/* ═══════『 🎵 ・ Vencord Spotify Plugin 』- Comment the line below if you don't want this spotify bar FOR VENCORD */
+@import "https://comfy-themes.github.io/Discord/betterdiscord/vencord-spotify.css";
 
 :root {
   /* ═══════『 💨 ・ Animations 』- If you don't want a high CPU usage, comment the line below */
@@ -134,10 +137,12 @@
   --background-secondary: #1e2233;
   --background-secondary-alt: #191f2e;
   --background-tertiary: #101320;
+  --background-accent: #7289da;
+
+  --modal-background: #23283d;
   --background-mobile-primary: #23283d;
   --background-mobile-secondary: #1e2233;
   --channeltextarea-background: #191f2e;
-  --background-accent: #7289da;
   --background-message-hover: transparent;
   --background-modifier-hover: #00000010;
   --background-modifier-active: #0000001a;
@@ -161,6 +166,7 @@
   --background-accent: #7289da;
   --background-modifier-hover: #262b41;
   --background-modifier-active: #262b41;
+  --modal-background: var(--background-primary);
   --header-primary: #fff;
   --header-secondary: #b1b5b9;
   --text-normal: #8e9297;
