@@ -1,21 +1,16 @@
 /**
- * @name         Alan Walker Theme
+ * @media https://betterdiscord.app/resources/thumbnails/1483.png
+* @name         Alan Walker Theme
  * @description  dark theme with Alan Walker's logo as background, credit to DevilBro#4401 for settingsicons, credit to Nyria#3863 for userbuttons in the serverbar and spotifyControls
  * @author       lolpowerluke
- * @version      1.2.0
- * @source       https://github.com/lolpowerluke/discordtheme/blob/main/alanWalker.theme.css
+ * @version      1.3.1.1
+ * @source       https://github.com/lolpowerluke/bd-themes/blob/main/AlanWalkerTheme/alanWalker.theme.css
  * @website      https://github.com/lolpowerluke
- * @invite       GwjrQVDNJ2
 */
 
 @import url('https://lolpowerluke.github.io/bd-themes/AlanWalkerTheme/main.css');
 /*all variables here*/
-.theme-light,
-.theme-dark,
 :root {
-  /*title bar*/
-  --title-bar-color: rgb(116, 116, 116); /*change to --title-bar-color*/
-
   /*Theme Dependent Stuff*/
   --title-bar-content: "DISCORD (Alan Walker Theme)";
   --main-background: url('https://i.imgur.com/tt9snCk.png?1') center right no-repeat;
@@ -30,10 +25,61 @@
   /*USRBG*/
   --USRBG-popout-background: url('https://i.imgur.com/tt9snCk.png?1'); /*fallback background for if the user has no usrbg set*/
 
+  /*settings*/
+  --settings-max-width: 1650px; /*"unset" for full screen width, "1650px" for default*/
+  --settings-myaccount-max-width: 740px; /*"unset" for full screen width, "740px" for default (740px is still full screen width for 1080p monitors or lower)*/
+
+  /*other stuff*/
+  --user-buttons-spacing: 8px;
+  --standard-account-height: 52px;
+  --avatar-radius: 5px;
+  --role-circle: 5px;
+  --guild-margin-bottom: 120px; /* default: 120px, change to 180px if you have the gameactivitytoggle plugin*/
+
+  /*Frienlist*/
+  --friendlist-friends-min-width: 300px;
+  --friendlist-friends-max-width: 650px;
+    
+  /*Embeds*/
+  --embed-width: 500px;
+
+  /*Settings*/
+  --bd-addon-cards-opacity: 1;
+  
+  /*Streamer mode*/
+  --stream-mode-hover-duration: .2s;
+  --stream-mode-hover-delay: 1s;
+
+  /*emoji & gif*/
+  --popup-emoji-size: 180px;
+
+  /*smallDMchannelList*/
+  --siderbar-no-hover-width: 60px; /*60px for just the channelIcon, 80px for the 1st 2/3 letters of the channel names*/
+  --channel-name-no-hover-margin: 15px; /*15px for hidding the name, 0px for showing the name*/
+  --channel-name-no-hover-opacity: 0; /*0 for hiding the name, 1 for showing the name*/
+
+  /*Version*/
+  --version-1-3-1-1: none;
+
+  /*Window width 700px or smaller*/
+  --guild-bar-width-700: 56px;
+}
+:root .bd-transparency {
+  /*Put any variable here you want to apply only if bd's transpareny settings is enabled*/
+  --bd-addon-cards-opacity: 0.7;
+}
+.theme-dark,
+:root.theme-dark {
+  /*title bar*/
+  --title-bar-color: rgb(116, 116, 116); 
+
+  /*Theme Dependent Stuff*/
+  --back-home-button: rgb(145, 145, 151);
+
   /*borders*/
-  --border-color-1: 116, 116, 116;
-  --border-color-hover: 179, 179, 179;
+  --border-color-1: 139, 139, 139;
   --border-opacity-1: 0.5;
+  --border-color-hover: 76, 76, 76;
   --border-opacity-hover: 0.8;
 
   /*boxes*/
@@ -71,6 +117,8 @@
   --permission-perm-side: rgba(0, 0, 0, 0.678);
   --image-utils-back: black;
   --image-utils-border: rgb(59, 59, 59);
+  --back-channel-tabs: rgb(22, 22, 22);
+  --back-channel-tabs-selected: rgb(46, 46, 46);
 
   /*status colors*/
   --online: rgb(0, 255, 0);
@@ -79,22 +127,20 @@
   --offline: #747f8d;
   --streaming: #a068ff;
 
-  /*settings*/
-  --back-seeting-account-cards: rgba(43, 43, 43, 0.75);
-  --back-seeting-account-cards-buttons: rgba(78, 78, 78, 0.5);
-  --back-seeting-account-cards-buttons-hover: rgba(78, 78, 78, 0.25);
-
   /*discords integrated colors*/
   --interactive-normal: white;
   --interactive-active: white;
   --interactive-hover: white;
   --channels-default: white;
-  --background-primary: rgba(0, 0, 0, 0.514);
-  --background-secondary: rgba(35, 35, 39, 0.267);
+  --background-primary: rgba(0, 0, 0, 0.5);
+  --background-secondary: rgba(35, 35, 39, 0.25);
   --background-secondary-alt: var(--back-color-boxes);
   --background-tertiary: rgb(1, 0, 5);
-  --background-floating: rgb(63, 63, 63);
-  --background-mentioned: rgba(255, 0, 0, 0.281);
+  --background-floating: rgb(7, 7, 7);
+  --background-mentioned: rgba(255, 0, 0, 0.3);
+  --background-modifier-hover: rgba(90, 90, 90, 0.2);
+  --background-modifier-selected: rgba(45, 45, 45, 0.2);
+  --background-modifier-selected-hover: rgb(135, 135, 135, 0.2);
   --info-warning-foreground: red;
 
   /*server folders*/
@@ -103,7 +149,7 @@
 
   /*other stuff*/
   --channeltextarea-background: rgba(77, 77, 77, 0.425);
-  --user-buttons-spacing: 8px;
+  --chatbar-placeholder-color: rgb(112, 112, 112);
   --back-color: rgb(0, 0, 0);
   --gr-dm-headers: linear-gradient(to right, transparent, rgb(83, 83, 83));
   --back-selected-dm: black;
@@ -111,7 +157,6 @@
   --text-link-back: black;
   --text-focus: white;
   --back-account: black;
-  --standard-account-height: 52px;
   --popout-header: rgb(3, 3, 3);
   --popout-scroller: rgb(41, 41, 41);
   --create-server: rgba(0, 0, 0, 0.911);
@@ -125,22 +170,33 @@
   --upload-popout-seperator: rgb(255, 255, 255);
   --back-color-search-bar: rgba(83, 83, 83, 0.349);
   --screen-share-main: rgba(0, 0, 0, 0);
-  --avatar-radius: 5px;
-  --role-circle: 5px;
   --message-hover: rgba(95, 95, 95, 0.267);
   --typing-border: rgb(122, 122, 122);
   --border-zoom: rgb(121, 121, 121);
   --back-activity-panels: rgb(39, 39, 39);
-  --back-gradient-opacity: .9;
+  --back-gradient-opacity: 1;
   --back-gradient-top: 0, 0, 0;
   --back-gradient-bottom: 40, 40, 40;
   --profile-gradient-button-color: black;
+  --back-upload-button: rgb(var(--border-color-1));
+  --fill-upload-button: black;
+
+  /*settings*/
+  --back-bd-addon-cards: black;
 
   /*menu*/
   --menu-item-hover-color: rgb(170, 170, 170);
+
+  /*Memberlist*/
+  --back-memberlist: 0, 0, 0;
+  --back-memberlist-opacity: 0.4;
+
+  /*Frienlist*/
+  --back-friendlist-friends: rgba(0, 0, 0, 0.4);
   
-  /*Embeds*/
-  --embed-width: 500px;
+  /*forums*/
+  --back-color-forum-posts: rgba(7, 7, 7, 0.726);
+  --back-color-forum-posts-hover: rgba(34, 34, 34, 0.575);
 
   /*user popouts*/
   --big-user-popout: black;
@@ -163,7 +219,7 @@
   --back-powercord-notices: black;
 
   /*scroller (I think)*/
-  --back-color-menu: rgb(0, 0, 0);
+  --back-color-menu: rgb(0, 0, 0, .8);
   --back-role-scroller: black;
 
   /* message separator*/
@@ -172,8 +228,195 @@
   --unread-message-line: rgb(255, 0, 0);
 
   /*emoji & gif*/
+  --back-emoji-etc-picker: black;
   --back-button-gifemoji-picker: rgba(0, 0, 255, 0.5);
-  --popup-emoji-size: 180px;
+
+  /*other stuff I tried to make work*/
+  --scrollbar-auto-scrollbar-color-thumb: red;
+  --scrollbar-auto-scrollbar-color-track: blue;
+
+  /*Link Preview*/
+  --linkpreview-background: rgb(0, 0, 0, .5);
+  
+  /*other*/
+  --backdrop: hsl(0, 0%, 0%, 0.6);
+
+  /*smallDMchannelList*/
+  --back-sidebar: rgba(0, 0, 0, 0.8);
+
+  /*Window width 700px or smaller*/
+  --back-user-buttons-700: rgb(0,0,0,0.2);
+  --back-user-buttons-hover-700: rgba(255, 255, 255, 0.2);
+}
+.theme-dark .bd-transparency,
+:root.theme-dark .bd-transparency {
+  /*Put any variable here you want to apply only if bd's transpareny settings is enabled*/
+  --back-gradient-opacity: .8;
+  --back-gradient-top: 0, 0, 0;
+  --back-gradient-bottom: 0, 0, 0;
+}
+.theme-light,
+:root.theme-light {
+  /*title bar*/
+  --title-bar-color: rgb(116, 116, 116); /*change to --title-bar-color*/
+
+  /*Theme Dependent Stuff*/
+  --back-home-button: rgb(70, 70, 70);
+
+  /*borders*/
+  --border-color-1: 116, 116, 116;
+  --border-opacity-1: 0.5;
+  --border-color-hover: 150, 150, 150;
+  --border-opacity-hover: 0.8;
+
+  /*boxes*/
+  --back-color-boxes: rgba(182, 182, 182, 0.2);
+  --back-color-boxes-hover: rgba(141, 141, 141, 0.4);
+  --back-color-danger-boxes: rgba(255, 0, 0, 0.5);
+  --back-color-danger-boxes-hover: rgba(255, 0, 0, 0.7);
+
+  /*buttons*/
+  --back-color-danger-button: red;
+  --back-color-button: #008549fa;
+  
+  /*switches*/
+  --switch-off: rgba(255, 255, 255, 0.5);
+  --switch-on: rgba(65, 65, 65, 0.829);
+
+  /*badges*/
+  --back-color-number-badges: rgb(177, 179, 199);
+
+  /*playing card border color*/
+  --playing-card-border: rgb(88, 88, 88);
+  --spotify-color: rgb(0, 255, 0);
+  --separator: 77, 77, 77;
+
+  --back-user-buttons: rgba(255, 255, 255, 0.116);
+  --selected-dm-color: rgba(65, 65, 65, 0.8);
+
+  /*unread pill*/
+  --unread-pill: rgb(110, 110, 110);
+  --unread-pill-shadow: rgb(0, 0, 0);
+
+  /*plugin colors*/
+  --permission-header: rgb(255, 255, 255);
+  --permission-role-side: rgba(255, 255, 255, 0.575);
+  --permission-perm-side: rgba(255, 255, 255, 0.678);
+  --image-utils-back: white;
+  --image-utils-border: rgb(196, 196, 196);
+  --back-channel-tabs: rgb(233, 233, 233);
+  --back-channel-tabs-selected: rgb(209, 209, 209);
+
+  /*status colors*/
+  --online: rgb(0, 255, 0);
+  --idle: rgb(255, 166, 0);
+  --dnd: rgb(255, 0, 0);
+  --offline: #747f8d;
+  --streaming: #a068ff;
+
+  /*discords integrated colors*/
+  --interactive-normal: black;
+  --interactive-active: black;
+  --interactive-hover: black;
+  --channels-default: black;
+  --background-primary: rgba(255, 255, 255, 0.5);
+  --background-secondary: rgba(220, 220, 220, 0.25);
+  --background-secondary-alt: var(--back-color-boxes);
+  --background-tertiary: rgb(255, 255, 255);
+  --background-floating: rgb(248, 248, 248);
+  --background-mentioned: rgba(255, 0, 0, 0.1);
+  --background-modifier-hover: rgba(90, 90, 90, 0.2);
+  --background-modifier-selected: rgba(45, 45, 45, 0.2);
+  --background-modifier-selected-hover: rgb(110, 110, 110, 0.2);
+  --info-warning-foreground: red;
+
+  /*server folders*/
+  --back-expanded-server-folder-icon: rgba(133, 133, 133, 0.55);
+  --back-expanded-server-folder: rgba(150, 150, 150, 0.6);
+
+  /*other stuff*/
+  --channeltextarea-background: rgba(143, 143, 143, 0.5);
+  --chatbar-placeholder-color: rgb(92, 92, 92);
+  --back-color: white;
+  --gr-dm-headers: linear-gradient(to right, transparent, rgb(83, 83, 83));
+  --back-selected-dm: white;
+  --text-link: #007a0a;
+  --text-link-back: white;
+  --text-focus: black;
+  --back-account: white;
+  --popout-header: white;
+  --popout-scroller: rgb(214, 214, 214);
+  --create-server: rgba(255, 255, 255, 0.9);
+  --create-server-text-color: black;
+  --create-server-choices: white;
+  --create-server-choices-border: rgb(255, 0, 0);
+  --create-server-footer-button: white;
+  --create-server-footer-button-hover: rgba(0, 0, 0, 0.123);
+  --upload-popout-footer: rgba(255, 255, 255, 0.65);
+  --upload-popout-top: white;
+  --upload-popout-seperator: black;
+  --back-color-search-bar: rgba(172, 172, 172, 0.35);
+  --screen-share-main: rgba(255, 255, 255, 0);
+  --message-hover: rgba(131, 131, 131, 0.25);
+  --typing-border: rgb(123, 123, 123);
+  --border-zoom: rgb(124, 124, 124);
+  --back-activity-panels: rgb(216, 216, 216);
+  --back-gradient-opacity: 1;
+  --back-gradient-top: 255, 255, 255;
+  --back-gradient-bottom: 175, 175, 175;
+  --profile-gradient-button-color: white;
+  --back-upload-button: rgb(116, 116, 116);
+  --fill-upload-button: var(--background-primary);
+
+  /*settings*/
+  --back-bd-addon-cards: white;
+
+  /*menu*/
+  --menu-item-hover-color: rgb(170, 170, 170);
+
+  /*Memberlist*/
+  --back-memberlist: 0, 0, 0;
+  --back-memberlist-opacity: 0.4;
+  
+  /*Frienlist*/
+  --back-friendlist-friends: rgba(255, 255, 255, 0.4);
+  
+  /*forums*/
+  --back-color-forum-posts: rgba(7, 7, 7, 0.726);
+  --back-color-forum-posts-hover: rgba(34, 34, 34, 0.575);
+
+  /*user popouts*/
+  --big-user-popout: white;
+  --big-user-popout-body: white;
+  --big-user-popout-topsection: white;
+  --big-user-popout-avatar: white;
+  --user-popout: white;
+  --user-popout-alt: rgba(0, 0, 255, 0.24);
+  --back-small-user-popout-badges: rgba(255, 255, 255, 0.75);
+  --user-popout-gradient-bottom: rgb(245, 245, 245);
+  --user-popout-gradient-top: rgb(220, 220, 220);
+  --profile-body-background-color: rgb(232,232,232);
+
+  /*plugin popups*/
+  --back-color-tooltips: white;
+  --back-channel-dms: white;
+  --back-server-themes-choice-button: white;
+  --back-friend-notifications: white;
+  --back-better-message-links: white;
+  --back-powercord-notices: white;
+
+  /*scroller (I think)*/
+  --back-color-menu: rgb(255, 255, 255, .8);
+  --back-role-scroller: black;
+
+  /* message separator*/
+  --message-separator-line: rgba(17, 0, 255, 0.5);
+  --unread-message: rgb(255, 0, 0);
+  --unread-message-line: rgb(255, 0, 0);
+
+  /*emoji & gif*/
+  --back-emoji-etc-picker: black;
+  --back-button-gifemoji-picker: rgba(0, 0, 255, 0.5);
 
   /*other stuff I tried to make work*/
   --scrollbar-auto-scrollbar-color-thumb: red;
@@ -181,21 +424,21 @@
 
   /*Link Preview*/
   --linkpreview-background: transparent;
-
-  /*Version*/
-  --version-1-1-9: none;
   
   /*other*/
-  --backdrop: hsl(0, 0%, 0%, 0.6);
+  --backdrop: hsla(0, 0%, 44%, 0.6);
 
   /*smallDMchannelList*/
-  --channel-name-no-hover-margin: 15px; /*15px for hidding the name, 0px for showing the name*/
-  --channel-name-no-hover-opacity: 0; /*0 for hiding the name, 1 for showing the name*/
-  --siderbar-no-hover-width: 60px; /*60px for just the channelIcon, 80px for the 1st 2/3 letters of the channel names*/
   --back-sidebar: rgb(0, 0, 0);
 
   /*Window width 700px or smaller*/
   --back-user-buttons-700: rgb(0,0,0,0.2);
-  --back-user-buttons-hover-700: rgb(0,0,0,0.5);
-  --guild-bar-width-700: 56px;
+  --back-user-buttons-hover-700: rgba(255, 255, 255, 0.2);
+}
+.theme-light .bd-transparency,
+:root.theme-light .bd-transparency {
+  /*Put any variable here you want to apply only if bd's transpareny settings is enabled*/
+  --back-gradient-opacity: .6;
+  --back-gradient-top: 255, 255, 255;
+  --back-gradient-bottom: 255, 255, 255;
 }

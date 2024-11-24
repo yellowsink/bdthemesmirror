@@ -1,13 +1,14 @@
 /**
   * @media https://betterdiscord.app/resources/thumbnails/663.jpg
 * @name Dark+
-  * @author DevEvil#8745
-  * @version Dark+3
+  * @author DevEvil
+  * @version Dark+5
   * @description Highly customized dark and purple theme for Discord
   * @authorId 468132563714703390
   * @authorLink https://devevil.com
   * @source https://github.com/DevEvil99/DarkPlus-Discord-Theme
   * @website https://devevil.com
+  * @donate https://devevil.com/dnt
   * @invite jsQ9UP7kCA
 */
 
@@ -25,5 +26,4 @@
   --watermark-filter-hue-rotate: 210deg;
   --watermark-filter-brightness: 70%;
   --watermark-filter-contrast: 200%;
-  --darkplus-emoji-picker-color: 210deg;
 }

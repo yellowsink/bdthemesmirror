@@ -1,12 +1,13 @@
 /**
   *	@name Ocean
-  *	@author DevEvil#8745
-  *	@version 1.0
+  *	@author DevEvil
+  *	@version 3
   *	@description Highly customized and customizable theme for Discord
   * @authorId 468132563714703390
   * @authorLink https://devevil.com
   * @source https://github.com/DevEvil99/Ocean-Discord-Theme
   * @website https://devevil.com
+  * @donate https://devevil.com/dnt 
   * @invite jsQ9UP7kCA
 */
 
@@ -43,7 +44,6 @@
   --watermark-filter-hue-rotate: 150deg;
   --watermark-filter-brightness: 100%;
   --watermark-filter-contrast: 200%;
-  --ocean-emoji-picker-color: 150deg;
 }
 * @media https://betterdiscord.app/resources/thumbnails/813.png
 
